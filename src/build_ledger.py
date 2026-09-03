@@ -1,13 +1,14 @@
 """
 build_ledger.py
 
-Takes your own cleaned dose records (output of transform.py) and groups them
-into a disease-by-disease ledger, using vaccine_mapping.json to know which
+Takes cleaned dose records (output of transform.py) and groups them into a
+disease-by-disease ledger, using vaccine_mapping.json to know which
 disease(s) each vaccine_name prevents and how many doses are expected.
 
-This is a self-contained first version -- no dependency on any teammate's
-code. Completion status here is dose-count-only (not yet age-adjusted);
-that's a documented simplification to improve on later.
+NOW ALSO includes date_of_birth per patient when available (e.g. from
+Synthea's patients.csv BIRTHDATE column), so downstream comparison (the
+real AI model) can actually evaluate age-conditional requirement rules
+instead of marking everything "needs_review".
 
 Usage:
     python3 -m src.build_ledger
@@ -16,6 +17,7 @@ Usage:
 import json
 from collections import defaultdict
 from pathlib import Path
+from typing import Optional
 
 
 def load_json(path: str):
@@ -23,12 +25,7 @@ def load_json(path: str):
         return json.load(f)
 
 
-def group_by_disease(dose_records: list[dict], vaccine_mapping: dict) -> dict:
-    """
-    Groups a patient's dose records by disease_name.
-    Records for vaccines not found in vaccine_mapping are collected
-    separately under 'unmapped' so they're visible, not silently dropped.
-    """
+def group_by_disease(dose_records: list, vaccine_mapping: dict):
     by_disease = defaultdict(list)
     unmapped = []
 
@@ -50,8 +47,7 @@ def group_by_disease(dose_records: list[dict], vaccine_mapping: dict) -> dict:
     return by_disease, unmapped
 
 
-def build_disease_entry(disease_name: str, doses: list[dict]) -> dict:
-    """Builds one disease-group ledger entry: sorted doses, labeled, completion status."""
+def build_disease_entry(disease_name: str, doses: list) -> dict:
     sorted_doses = sorted(doses, key=lambda d: d["dose_date"])
 
     doses_received = [
@@ -64,10 +60,6 @@ def build_disease_entry(disease_name: str, doses: list[dict]) -> dict:
     ]
 
     doses_completed_count = len(sorted_doses)
-    # Take the max expected_total_doses seen across records for this disease
-    # (different vaccines for the same disease may report different totals;
-    # this is a simplification worth revisiting once you extract state-specific
-    # requirements instead of relying on the generic vaccine_mapping numbers).
     expected_values = [d["expected_total_doses"] for d in sorted_doses if d["expected_total_doses"]]
     doses_expected_count = max(expected_values) if expected_values else None
 
@@ -76,7 +68,7 @@ def build_disease_entry(disease_name: str, doses: list[dict]) -> dict:
     elif doses_completed_count >= doses_expected_count:
         completion_status = "Complete"
     else:
-        completion_status = "Partial"  # NOTE: not age-adjusted yet -- see design doc
+        completion_status = "Partial"
 
     missing_doses = []
     if doses_expected_count and doses_completed_count < doses_expected_count:
@@ -92,7 +84,7 @@ def build_disease_entry(disease_name: str, doses: list[dict]) -> dict:
     }
 
 
-def build_patient_ledger(user_id: str, patient_name: str, dose_records: list[dict], vaccine_mapping: dict) -> dict:
+def build_patient_ledger(user_id: str, patient_name: str, dose_records: list, vaccine_mapping: dict, date_of_birth: Optional[str] = None) -> dict:
     by_disease, unmapped = group_by_disease(dose_records, vaccine_mapping)
 
     ledger = [
@@ -103,18 +95,25 @@ def build_patient_ledger(user_id: str, patient_name: str, dose_records: list[dic
     result = {
         "user_id": user_id,
         "patient_name": patient_name,
+        "date_of_birth": date_of_birth,  # NEW -- None if not available, but explicit
         "ledger": ledger,
     }
 
     if unmapped:
-        result["unmapped_records"] = unmapped  # visible, not silently dropped
+        result["unmapped_records"] = unmapped
 
     return result
 
 
-def build_all_ledgers(clean_records_path: str, vaccine_mapping_path: str, output_path: str):
+def build_all_ledgers(clean_records_path: str, vaccine_mapping_path: str, output_path: str, dob_lookup: Optional[dict] = None):
+    """
+    dob_lookup: optional dict of {user_id: "YYYY-MM-DD"}. If provided,
+    each patient's date_of_birth is populated from it. If a user_id isn't
+    found in dob_lookup, date_of_birth stays None (explicit, not guessed).
+    """
     records = load_json(clean_records_path)
     vaccine_mapping = load_json(vaccine_mapping_path)
+    dob_lookup = dob_lookup or {}
 
     by_patient = defaultdict(list)
     patient_names = {}
@@ -123,7 +122,13 @@ def build_all_ledgers(clean_records_path: str, vaccine_mapping_path: str, output
         patient_names[r["user_id"]] = r["patient_name"]
 
     ledgers = [
-        build_patient_ledger(user_id, patient_names[user_id], records, vaccine_mapping)
+        build_patient_ledger(
+            user_id,
+            patient_names[user_id],
+            records,
+            vaccine_mapping,
+            date_of_birth=dob_lookup.get(user_id),
+        )
         for user_id, records in by_patient.items()
     ]
 
@@ -131,10 +136,13 @@ def build_all_ledgers(clean_records_path: str, vaccine_mapping_path: str, output
     with open(output_path, "w") as f:
         json.dump(ledgers, f, indent=2)
 
+    has_dob = sum(1 for l in ledgers if l["date_of_birth"])
     print(f"Built {len(ledgers)} patient ledger(s) -> {output_path}")
+    print(f"  {has_dob} of {len(ledgers)} patients have date_of_birth populated")
     for ledger in ledgers:
         unmapped_note = f" ({len(ledger['unmapped_records'])} unmapped vaccines)" if "unmapped_records" in ledger else ""
-        print(f"  {ledger['patient_name']}: {len(ledger['ledger'])} disease groups{unmapped_note}")
+        dob_note = f", DOB={ledger['date_of_birth']}" if ledger["date_of_birth"] else ", DOB=missing"
+        print(f"  {ledger['patient_name']}: {len(ledger['ledger'])} disease groups{unmapped_note}{dob_note}")
 
     return ledgers
 

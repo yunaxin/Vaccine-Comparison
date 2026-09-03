@@ -29,6 +29,7 @@ class LedgerDisease(BaseModel):
 class PatientLedger(BaseModel):
     user_id: str
     patient_name: str
+    date_of_birth: Optional[str] = None  # NEW -- needed for age-conditional rule evaluation
     ledger: list[LedgerDisease]
 
 
@@ -55,7 +56,7 @@ class DiseaseComparisonResult(BaseModel):
     disease: str
     doses_required: int
     doses_received: int
-    status: str  # "met", "partial", "missing"
+    status: str  # "met", "partial", "missing", "not_applicable", "needs_review"
     notes: Optional[str] = None
 
 class ComparisonResult(BaseModel):
