@@ -1,20 +1,14 @@
 """
 model_gemini.py
 
-First real model wired into the comparison pipeline, using Gemini via
-Vertex AI (no separate deployment needed, unlike MedGemma which requires
-a Model Garden endpoint first). Same output shape as compare.py's stub
-(ComparisonResult), so results are directly comparable.
-
-Once MedGemma is deployed to an endpoint, swap the model call in
-call_model() for an endpoint.predict() call -- everything else
-(prompt building, response parsing, output shape) stays the same.
+Real model integration using Gemini via Vertex AI. Same output shape as
+compare.py's stub (ComparisonResult), so results are directly comparable.
 """
 
 import json
 from vertexai.generative_models import GenerativeModel
 
-MODEL_NAME = "gemini-2.0-flash-001"  # adjust to whichever Gemini version is available in your project
+MODEL_NAME = "gemini-2.5-flash"
 
 SYSTEM_INSTRUCTIONS = """You are checking whether a patient's vaccination record satisfies a state's school immunization requirements.
 
@@ -22,10 +16,16 @@ For each requirement in the state's requirement list:
 1. Check if the requirement applies to this patient given their grade level (see grade_or_age_range). If not, mark it "not_applicable" and do not evaluate it further.
 2. If it applies, calculate the patient's age at the date of each relevant dose (using date_of_birth and each dose_date).
 3. Read the notes field carefully -- it may describe alternate, reduced dose counts that are acceptable if specific doses were given at or after a specific age. Apply whichever rule the patient's actual dose ages satisfy, using the MOST FAVORABLE rule that legitimately applies.
-4. Assign a status: "met", "partial", "missing", or "not_applicable".
-5. Explain your reasoning in the notes field for any case where you applied a conditional/reduced-dose rule rather than just the base dose count.
+4. Assign a status using these EXACT definitions -- follow them precisely, do not deviate:
+   - "met": doses_received >= doses_required (after applying any conditional reduction from step 3)
+   - "partial": doses_received is greater than 0 but less than doses_required. IMPORTANT: if the patient has received at least 1 relevant dose, the status MUST be "partial", never "missing", even if they are far short of the requirement.
+   - "missing": doses_received is exactly 0
+   - "not_applicable": the requirement does not apply to this patient's grade/age (per step 1)
+   - "needs_review": a required piece of information (date_of_birth, a dose_date) is missing and is necessary to evaluate a conditional rule
+5. Double check your status assignment against doses_received and doses_required using the definitions above before finalizing your answer. A common mistake is marking a disease "missing" when doses_received is actually greater than 0 -- verify this does not happen.
+6. Explain your reasoning in the notes field for any case where you applied a conditional/reduced-dose rule rather than just the base dose count.
 
-Do not guess or infer missing dates. If date_of_birth or a dose_date is missing and it's required to evaluate a conditional rule, mark that disease's status as "needs_review" rather than guessing.
+Do not guess or infer missing dates. If date_of_birth or a dose_date is missing and it's required to evaluate a conditional rule, use "needs_review" per the definitions above rather than guessing.
 
 Return ONLY a JSON object matching this exact shape, no other text, no markdown formatting:
 {
@@ -74,12 +74,6 @@ State requirements:
 
 
 def run_model_comparison(ledger_path: str, requirement_path: str, output_path: str, patient_grade_level: str = "K-12", limit: int = None):
-    """
-    Runs the real model against ledgers, same interface shape as
-    compare.py's run_comparison(), for direct output comparison.
-    limit: optionally cap how many patients to run (model calls cost
-    money/quota -- test on a few before running all 113).
-    """
     with open(ledger_path) as f:
         ledgers = json.load(f)
     with open(requirement_path) as f:
