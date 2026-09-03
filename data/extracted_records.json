@@ -1,0 +1,112 @@
+[
+  {
+    "user_id": "user_001",
+    "patient_name": "Patrick Weber",
+    "vaccine_name": "Polio",
+    "dose_date": "2009-01-09",
+    "manufacturer": "Unknown",
+    "lot_number": "Unknown",
+    "provider": "Unknown",
+    "clinic": "CPMC TRAVEL CLINIC"
+  },
+  {
+    "user_id": "user_001",
+    "patient_name": "Patrick Weber",
+    "vaccine_name": "Tdap",
+    "dose_date": "2009-01-09",
+    "manufacturer": "Unknown",
+    "lot_number": "Unknown",
+    "provider": "Unknown",
+    "clinic": "CPMC TRAVEL CLINIC"
+  },
+  {
+    "user_id": "user_001",
+    "patient_name": "Patrick Weber",
+    "vaccine_name": "Menactra",
+    "dose_date": "2009-01-09",
+    "manufacturer": "Unknown",
+    "lot_number": "Unknown",
+    "provider": "Unknown",
+    "clinic": "CPMC TRAVEL CLINIC"
+  },
+  {
+    "user_id": "user_001",
+    "patient_name": "Patrick Weber",
+    "vaccine_name": "Typhoid",
+    "dose_date": "2009-01-09",
+    "manufacturer": "Unknown",
+    "lot_number": "Unknown",
+    "provider": "Unknown",
+    "clinic": "CPMC TRAVEL CLINIC"
+  },
+  {
+    "user_id": "user_001",
+    "patient_name": "Patrick Weber",
+    "vaccine_name": "Hep A #1",
+    "dose_date": "2009-01-09",
+    "manufacturer": "Unknown",
+    "lot_number": "Unknown",
+    "provider": "Unknown",
+    "clinic": "CPMC TRAVEL CLINIC"
+  },
+  {
+    "user_id": "user_001",
+    "patient_name": "Patrick Weber",
+    "vaccine_name": "Hep A #2",
+    "dose_date": "2009-07-22",
+    "manufacturer": "Unknown",
+    "lot_number": "Unknown",
+    "provider": "ANTHONY SOMKIN, M.D.",
+    "clinic": "Unknown"
+  },
+  {
+    "user_id": "user_001",
+    "patient_name": "Patrick Weber",
+    "vaccine_name": "MMR",
+    "dose_date": "1982-09-24",
+    "manufacturer": "Unknown",
+    "lot_number": "Unknown",
+    "provider": "Unknown",
+    "clinic": "Unknown"
+  },
+  {
+    "user_id": "user_001",
+    "patient_name": "Patrick Weber",
+    "vaccine_name": "Hep B #1",
+    "dose_date": "2009-03-20",
+    "manufacturer": "Unknown",
+    "lot_number": "Unknown",
+    "provider": "ANTHONY SOMKIN, M.D.",
+    "clinic": "Unknown"
+  },
+  {
+    "user_id": "user_001",
+    "patient_name": "Patrick Weber",
+    "vaccine_name": "Hep B #2",
+    "dose_date": "2009-04-22",
+    "manufacturer": "Unknown",
+    "lot_number": "Unknown",
+    "provider": "ANTHONY SOMKIN, M.D.",
+    "clinic": "Unknown"
+  },
+  {
+    "user_id": "user_001",
+    "patient_name": "Patrick Weber",
+    "vaccine_name": "Hep B #3",
+    "dose_date": "2009-06-23",
+    "manufacturer": "Unknown",
+    "lot_number": "Unknown",
+    "provider": "ANTHONY SOMKIN, M.D.",
+    "clinic": "Unknown"
+  },
+  {
+    "user_id": "user_001",
+    "patient_name": "Patrick Weber",
+    "vaccine_name": "Yellow Fever (YF-VAX)",
+    "dose_date": "2009-01-09",
+    "manufacturer": "Sanofi Pasteur Inc.",
+    "lot_number": "UF 428AA",
+    "provider": "Unknown",
+    "clinic": "CPMC TRAVEL CLINIC"
+  }
+]

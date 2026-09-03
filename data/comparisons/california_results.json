@@ -1,0 +1,87 @@
+[
+  {
+    "patient_id": "user_001",
+    "state": "California",
+    "model_used": "stub_dose_count_only",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "4 doses meet requirement, OR 3 doses if >=1 dose given at age >=4 years"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "5 doses meet requirement, OR 4 if >=1 dose at age>=4, OR 3 if >=1 Tdap dose at age>=7. Tdap dose may meet 7th grade requirement."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria (combined DTaP/DTP/Tdap/Td vaccine)"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria (combined DTaP/DTP/Tdap/Td vaccine)"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 1,
+        "status": "met",
+        "notes": "SEPARATE requirement: 1 Tdap dose given at age >=7 years required for 7th grade advancement/admission through 12th grade. May overlap with the DTaP series above."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "2 doses meet requirement. Doses must be given at age >=1 year."
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "2 doses meet requirement. Doses must be given at age >=1 year."
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "2 doses meet requirement. Doses must be given at age >=1 year."
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 3,
+        "status": "met",
+        "notes": "3 doses meet requirement. No age-conditional reduction noted."
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "2 doses meet requirement. No age-conditional reduction noted."
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Required for pre-kindergarten only, NOT required K-12. At least 1 dose must be given at age >=1 year."
+      }
+    ]
+  }
+]

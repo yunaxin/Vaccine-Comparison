@@ -1,0 +1,203 @@
+[
+  {
+    "user_id": "user_001",
+    "patient_name": "Patrick Weber",
+    "ledger": [
+      {
+        "disease_name": "Diphtheria",
+        "doses_received": [
+          {
+            "dose_label": "Dose 1",
+            "vaccine_name": "Tdap",
+            "dose_date": "2009-01-09"
+          }
+        ],
+        "doses_completed_count": 1,
+        "doses_expected_count": 1,
+        "completion_status": "Complete",
+        "missing_doses": []
+      },
+      {
+        "disease_name": "Hepatitis A",
+        "doses_received": [
+          {
+            "dose_label": "Dose 1",
+            "vaccine_name": "Hep A",
+            "dose_date": "2009-01-09"
+          },
+          {
+            "dose_label": "Dose 2",
+            "vaccine_name": "Hep A",
+            "dose_date": "2009-07-22"
+          }
+        ],
+        "doses_completed_count": 2,
+        "doses_expected_count": 2,
+        "completion_status": "Complete",
+        "missing_doses": []
+      },
+      {
+        "disease_name": "Hepatitis B",
+        "doses_received": [
+          {
+            "dose_label": "Dose 1",
+            "vaccine_name": "Hep B",
+            "dose_date": "2009-03-20"
+          },
+          {
+            "dose_label": "Dose 2",
+            "vaccine_name": "Hep B",
+            "dose_date": "2009-04-22"
+          },
+          {
+            "dose_label": "Dose 3",
+            "vaccine_name": "Hep B",
+            "dose_date": "2009-06-23"
+          }
+        ],
+        "doses_completed_count": 3,
+        "doses_expected_count": 3,
+        "completion_status": "Complete",
+        "missing_doses": []
+      },
+      {
+        "disease_name": "Measles",
+        "doses_received": [
+          {
+            "dose_label": "Dose 1",
+            "vaccine_name": "MMR",
+            "dose_date": "1982-09-24"
+          }
+        ],
+        "doses_completed_count": 1,
+        "doses_expected_count": 2,
+        "completion_status": "Partial",
+        "missing_doses": [
+          "Dose 2"
+        ]
+      },
+      {
+        "disease_name": "Meningococcal disease",
+        "doses_received": [
+          {
+            "dose_label": "Dose 1",
+            "vaccine_name": "Menactra",
+            "dose_date": "2009-01-09"
+          }
+        ],
+        "doses_completed_count": 1,
+        "doses_expected_count": 2,
+        "completion_status": "Partial",
+        "missing_doses": [
+          "Dose 2"
+        ]
+      },
+      {
+        "disease_name": "Mumps",
+        "doses_received": [
+          {
+            "dose_label": "Dose 1",
+            "vaccine_name": "MMR",
+            "dose_date": "1982-09-24"
+          }
+        ],
+        "doses_completed_count": 1,
+        "doses_expected_count": 2,
+        "completion_status": "Partial",
+        "missing_doses": [
+          "Dose 2"
+        ]
+      },
+      {
+        "disease_name": "Pertussis",
+        "doses_received": [
+          {
+            "dose_label": "Dose 1",
+            "vaccine_name": "Tdap",
+            "dose_date": "2009-01-09"
+          }
+        ],
+        "doses_completed_count": 1,
+        "doses_expected_count": 1,
+        "completion_status": "Complete",
+        "missing_doses": []
+      },
+      {
+        "disease_name": "Polio",
+        "doses_received": [
+          {
+            "dose_label": "Dose 1",
+            "vaccine_name": "Polio",
+            "dose_date": "2009-01-09"
+          }
+        ],
+        "doses_completed_count": 1,
+        "doses_expected_count": 4,
+        "completion_status": "Partial",
+        "missing_doses": [
+          "Dose 2",
+          "Dose 3",
+          "Dose 4"
+        ]
+      },
+      {
+        "disease_name": "Rubella",
+        "doses_received": [
+          {
+            "dose_label": "Dose 1",
+            "vaccine_name": "MMR",
+            "dose_date": "1982-09-24"
+          }
+        ],
+        "doses_completed_count": 1,
+        "doses_expected_count": 2,
+        "completion_status": "Partial",
+        "missing_doses": [
+          "Dose 2"
+        ]
+      },
+      {
+        "disease_name": "Tetanus",
+        "doses_received": [
+          {
+            "dose_label": "Dose 1",
+            "vaccine_name": "Tdap",
+            "dose_date": "2009-01-09"
+          }
+        ],
+        "doses_completed_count": 1,
+        "doses_expected_count": 1,
+        "completion_status": "Complete",
+        "missing_doses": []
+      },
+      {
+        "disease_name": "Typhoid",
+        "doses_received": [
+          {
+            "dose_label": "Dose 1",
+            "vaccine_name": "Typhoid",
+            "dose_date": "2009-01-09"
+          }
+        ],
+        "doses_completed_count": 1,
+        "doses_expected_count": 1,
+        "completion_status": "Complete",
+        "missing_doses": []
+      },
+      {
+        "disease_name": "Yellow Fever",
+        "doses_received": [
+          {
+            "dose_label": "Dose 1",
+            "vaccine_name": "Yellow Fever",
+            "dose_date": "2009-01-09"
+          }
+        ],
+        "doses_completed_count": 1,
+        "doses_expected_count": 1,
+        "completion_status": "Complete",
+        "missing_doses": []
+      }
+    ]
+  }
+]

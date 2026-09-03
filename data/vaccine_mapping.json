@@ -1,0 +1,380 @@
+{
+  "DTaP": {
+    "diseases_prevented": ["Diphtheria", "Tetanus", "Pertussis"],
+    "formulation": "pediatric_full_strength",
+    "formulation_type": "inactivated_toxoid",
+    "typical_age_range": "6 weeks - 6 years",
+    "expected_total_doses": 5
+  },
+  "DTaP-Hib-IPV": {
+    "diseases_prevented": ["Diphtheria", "Tetanus", "Pertussis", "Haemophilus influenzae type B", "Polio"],
+    "formulation": "pediatric_full_strength_combination",
+    "formulation_type": "inactivated_toxoid_combination",
+    "typical_age_range": "6 weeks - 4 years",
+    "expected_total_doses": 4
+  },
+  "DTaP-IPV": {
+    "diseases_prevented": ["Diphtheria", "Tetanus", "Pertussis", "Polio"],
+    "formulation": "pediatric_full_strength_combination",
+    "formulation_type": "inactivated_toxoid_combination",
+    "typical_age_range": "4-6 years",
+    "expected_total_doses": 1
+  },
+  "DTaP-HepB-IPV": {
+    "diseases_prevented": ["Diphtheria", "Tetanus", "Pertussis", "Hepatitis B", "Polio"],
+    "formulation": "pediatric_full_strength_combination",
+    "formulation_type": "inactivated_toxoid_combination",
+    "typical_age_range": "6 weeks - 6 years",
+    "expected_total_doses": 3
+  },
+  "Tdap": {
+    "diseases_prevented": ["Diphtheria", "Tetanus", "Pertussis"],
+    "formulation": "adolescent_adult_reduced",
+    "formulation_type": "inactivated_toxoid",
+    "typical_age_range": "7 years+",
+    "expected_total_doses": 1
+  },
+  "Td": {
+    "diseases_prevented": ["Diphtheria", "Tetanus"],
+    "formulation": "adult_reduced",
+    "formulation_type": "toxoid",
+    "typical_age_range": "7 years+",
+    "expected_total_doses": 1
+  },
+  "DT": {
+    "diseases_prevented": ["Diphtheria", "Tetanus"],
+    "formulation": "pediatric_full_strength",
+    "formulation_type": "toxoid",
+    "typical_age_range": "6 weeks - 6 years",
+    "expected_total_doses": 5
+  },
+  "MMR": {
+    "diseases_prevented": ["Measles", "Mumps", "Rubella"],
+    "formulation": "live_attenuated",
+    "formulation_type": "live_attenuated",
+    "typical_age_range": "12 months+",
+    "expected_total_doses": 2
+  },
+  "MMRV": {
+    "diseases_prevented": ["Measles", "Mumps", "Rubella", "Varicella"],
+    "formulation": "live_attenuated_combination",
+    "formulation_type": "live_attenuated",
+    "typical_age_range": "12 months - 12 years",
+    "expected_total_doses": 2,
+    "notes": "ACIP voted against preferential use in 2026; separate MMR + Varicella preferred"
+  },
+  "VAR": {
+    "diseases_prevented": ["Varicella"],
+    "formulation": "live_attenuated",
+    "formulation_type": "live_attenuated",
+    "typical_age_range": "12 months+",
+    "expected_total_doses": 2
+  },
+  "Varicella": {
+    "diseases_prevented": ["Varicella"],
+    "formulation": "live_attenuated",
+    "formulation_type": "live_attenuated",
+    "typical_age_range": "12 months+",
+    "expected_total_doses": 2
+  },
+  "IPV": {
+    "diseases_prevented": ["Polio"],
+    "formulation": "inactivated",
+    "formulation_type": "inactivated",
+    "typical_age_range": "2 months - 6 years",
+    "expected_total_doses": 4
+  },
+  "OPV": {
+    "diseases_prevented": ["Polio"],
+    "formulation": "oral_live_attenuated",
+    "formulation_type": "live_attenuated",
+    "typical_age_range": "2 months+",
+    "expected_total_doses": 4,
+    "notes": "No longer used in the US; may appear in international records"
+  },
+  "Hib": {
+    "diseases_prevented": ["Haemophilus influenzae type B"],
+    "formulation": "conjugate",
+    "formulation_type": "subunit_conjugate",
+    "typical_age_range": "2 months - 5 years",
+    "expected_total_doses": 4
+  },
+  "HepA": {
+    "diseases_prevented": ["Hepatitis A"],
+    "formulation": "inactivated",
+    "formulation_type": "inactivated",
+    "typical_age_range": "12 months+",
+    "expected_total_doses": 2
+  },
+  "Hep A": {
+    "diseases_prevented": ["Hepatitis A"],
+    "formulation": "inactivated",
+    "formulation_type": "inactivated",
+    "typical_age_range": "12 months+",
+    "expected_total_doses": 2
+  },
+  "HepB": {
+    "diseases_prevented": ["Hepatitis B"],
+    "formulation": "subunit",
+    "formulation_type": "subunit",
+    "typical_age_range": "Birth+",
+    "expected_total_doses": 3
+  },
+  "Hep B": {
+    "diseases_prevented": ["Hepatitis B"],
+    "formulation": "subunit",
+    "formulation_type": "subunit",
+    "typical_age_range": "Birth+",
+    "expected_total_doses": 3
+  },
+  "PCV7": {
+    "diseases_prevented": ["Pneumococcal disease"],
+    "formulation": "conjugate_7valent",
+    "formulation_type": "subunit_conjugate",
+    "typical_age_range": "2 months - 5 years",
+    "expected_total_doses": 4
+  },
+  "PCV13": {
+    "diseases_prevented": ["Pneumococcal disease"],
+    "formulation": "conjugate_13valent",
+    "formulation_type": "subunit_conjugate",
+    "typical_age_range": "2 months+",
+    "expected_total_doses": 4
+  },
+  "PCV15": {
+    "diseases_prevented": ["Pneumococcal disease"],
+    "formulation": "conjugate_15valent",
+    "formulation_type": "subunit_conjugate",
+    "typical_age_range": "2 months+",
+    "expected_total_doses": 4
+  },
+  "PCV20": {
+    "diseases_prevented": ["Pneumococcal disease"],
+    "formulation": "conjugate_20valent",
+    "formulation_type": "subunit_conjugate",
+    "typical_age_range": "Adults",
+    "expected_total_doses": 1
+  },
+  "PPSV23": {
+    "diseases_prevented": ["Pneumococcal disease"],
+    "formulation": "polysaccharide_23valent",
+    "formulation_type": "polysaccharide",
+    "typical_age_range": "2 years+ (high risk) / 65 years+",
+    "expected_total_doses": 1
+  },
+  "RV1": {
+    "diseases_prevented": ["Rotavirus"],
+    "formulation": "live_attenuated_monovalent",
+    "formulation_type": "live_attenuated",
+    "typical_age_range": "6 weeks - 24 weeks",
+    "expected_total_doses": 2
+  },
+  "RV5": {
+    "diseases_prevented": ["Rotavirus"],
+    "formulation": "live_attenuated_pentavalent",
+    "formulation_type": "live_attenuated",
+    "typical_age_range": "6 weeks - 32 weeks",
+    "expected_total_doses": 3
+  },
+  "RV": {
+    "diseases_prevented": ["Rotavirus"],
+    "formulation": "live_attenuated",
+    "formulation_type": "live_attenuated",
+    "typical_age_range": "6 weeks - 32 weeks",
+    "expected_total_doses": 3
+  },
+  "IIV": {
+    "diseases_prevented": ["Influenza"],
+    "formulation": "inactivated_influenza",
+    "formulation_type": "inactivated",
+    "typical_age_range": "6 months+",
+    "expected_total_doses": 1
+  },
+  "IIV4": {
+    "diseases_prevented": ["Influenza"],
+    "formulation": "inactivated_quadrivalent",
+    "formulation_type": "inactivated",
+    "typical_age_range": "6 months+",
+    "expected_total_doses": 1
+  },
+  "LAIV": {
+    "diseases_prevented": ["Influenza"],
+    "formulation": "live_attenuated_intranasal",
+    "formulation_type": "live_attenuated",
+    "typical_age_range": "2 years - 49 years",
+    "expected_total_doses": 1
+  },
+  "LAIV4": {
+    "diseases_prevented": ["Influenza"],
+    "formulation": "live_attenuated_quadrivalent_intranasal",
+    "formulation_type": "live_attenuated",
+    "typical_age_range": "2 years - 49 years",
+    "expected_total_doses": 1
+  },
+  "Flu": {
+    "diseases_prevented": ["Influenza"],
+    "formulation": "inactivated",
+    "formulation_type": "inactivated",
+    "typical_age_range": "6 months+",
+    "expected_total_doses": 1
+  },
+  "HPV": {
+    "diseases_prevented": ["Human Papillomavirus", "Cervical Cancer", "Genital Warts"],
+    "formulation": "recombinant_9valent",
+    "formulation_type": "subunit",
+    "typical_age_range": "9 years - 45 years",
+    "expected_total_doses": 2
+  },
+  "HPV9": {
+    "diseases_prevented": ["Human Papillomavirus", "Cervical Cancer", "Genital Warts"],
+    "formulation": "recombinant_9valent",
+    "formulation_type": "subunit",
+    "typical_age_range": "9 years - 45 years",
+    "expected_total_doses": 2
+  },
+  "MenACWY": {
+    "diseases_prevented": ["Meningococcal disease"],
+    "formulation": "conjugate_quadrivalent",
+    "formulation_type": "subunit_conjugate",
+    "typical_age_range": "11 years+",
+    "expected_total_doses": 2
+  },
+  "MCV4": {
+    "diseases_prevented": ["Meningococcal disease"],
+    "formulation": "conjugate_quadrivalent",
+    "formulation_type": "subunit_conjugate",
+    "typical_age_range": "11 years+",
+    "expected_total_doses": 2
+  },
+  "MenB": {
+    "diseases_prevented": ["Meningococcal disease serogroup B"],
+    "formulation": "recombinant",
+    "formulation_type": "subunit",
+    "typical_age_range": "10 years+",
+    "expected_total_doses": 2
+  },
+  "MenB-FHbp": {
+    "diseases_prevented": ["Meningococcal disease serogroup B"],
+    "formulation": "recombinant_bivalent",
+    "formulation_type": "subunit",
+    "typical_age_range": "10 years+",
+    "expected_total_doses": 3
+  },
+  "MenB-4C": {
+    "diseases_prevented": ["Meningococcal disease serogroup B"],
+    "formulation": "recombinant_multicomponent",
+    "formulation_type": "subunit",
+    "typical_age_range": "10 years+",
+    "expected_total_doses": 2
+  },
+  "Zoster": {
+    "diseases_prevented": ["Herpes Zoster (Shingles)"],
+    "formulation": "recombinant_adjuvanted",
+    "formulation_type": "subunit",
+    "typical_age_range": "50 years+",
+    "expected_total_doses": 2
+  },
+  "RZV": {
+    "diseases_prevented": ["Herpes Zoster (Shingles)"],
+    "formulation": "recombinant_adjuvanted",
+    "formulation_type": "subunit",
+    "typical_age_range": "50 years+",
+    "expected_total_doses": 2
+  },
+  "ZVL": {
+    "diseases_prevented": ["Herpes Zoster (Shingles)"],
+    "formulation": "live_attenuated",
+    "formulation_type": "live_attenuated",
+    "typical_age_range": "60 years+",
+    "expected_total_doses": 1,
+    "notes": "No longer recommended; replaced by RZV"
+  },
+  "RSV": {
+    "diseases_prevented": ["Respiratory Syncytial Virus"],
+    "formulation": "recombinant",
+    "formulation_type": "subunit",
+    "typical_age_range": "60 years+ / pregnant women",
+    "expected_total_doses": 1
+  },
+  "COVID-19": {
+    "diseases_prevented": ["COVID-19"],
+    "formulation": "mRNA",
+    "formulation_type": "mRNA",
+    "typical_age_range": "6 months+",
+    "expected_total_doses": 2
+  },
+  "COVID-19 Moderna": {
+    "diseases_prevented": ["COVID-19"],
+    "formulation": "mRNA",
+    "formulation_type": "mRNA",
+    "typical_age_range": "6 months+",
+    "expected_total_doses": 2
+  },
+  "COVID-19 Pfizer": {
+    "diseases_prevented": ["COVID-19"],
+    "formulation": "mRNA",
+    "formulation_type": "mRNA",
+    "typical_age_range": "6 months+",
+    "expected_total_doses": 2
+  },
+  "COVID-19 Novavax": {
+    "diseases_prevented": ["COVID-19"],
+    "formulation": "protein_subunit_adjuvanted",
+    "formulation_type": "subunit",
+    "typical_age_range": "12 years+",
+    "expected_total_doses": 2
+  },
+  "Polio": {
+    "diseases_prevented": ["Polio"],
+    "formulation": "inactivated",
+    "formulation_type": "inactivated",
+    "typical_age_range": "2 months+",
+    "expected_total_doses": 4,
+    "notes": "Generic name — likely IPV in US records post-2000; may be OPV if international/pre-2000"
+  },
+  "Menactra": {
+    "diseases_prevented": ["Meningococcal disease"],
+    "formulation": "conjugate_quadrivalent",
+    "formulation_type": "subunit_conjugate",
+    "typical_age_range": "9 months+",
+    "expected_total_doses": 2,
+    "notes": "Brand name for MenACWY-D by Sanofi"
+  },
+  "Typhoid": {
+      "diseases_prevented": ["Typhoid"],
+      "formulation": "inactivated",
+      "formulation_type": "inactivated",
+      "typical_age_range": "2 years+",
+      "expected_total_doses": 1,
+      "notes": "May refer to Typhim Vi (injection) or Vivotif (oral); injection most common in travel records"
+  },
+  "Typhim Vi": {
+      "diseases_prevented": ["Typhoid"],
+      "formulation": "polysaccharide",
+      "formulation_type": "polysaccharide",
+      "typical_age_range": "2 years+",
+      "expected_total_doses": 1
+  },
+  "Vivotif": {
+      "diseases_prevented": ["Typhoid"],
+      "formulation": "live_attenuated_oral",
+      "formulation_type": "live_attenuated",
+      "typical_age_range": "6 years+",
+      "expected_total_doses": 4
+  },
+  "Yellow Fever Vaccine": {
+    "diseases_prevented": ["Yellow Fever"],
+    "formulation": "live_attenuated",
+    "formulation_type": "live_attenuated",
+    "typical_age_range": "9 months+",
+    "expected_total_doses": 1,
+    "notes": "Single lifetime dose; required for travel to certain countries"
+  },
+  "Yellow Fever": {
+      "diseases_prevented": ["Yellow Fever"],
+      "formulation": "live_attenuated",
+      "formulation_type": "live_attenuated",
+      "typical_age_range": "9 months+",
+      "expected_total_doses": 1
+  }
+}
