@@ -14,7 +14,7 @@ call_model() for an endpoint.predict() call -- everything else
 import json
 from vertexai.generative_models import GenerativeModel
 
-MODEL_NAME = "gemini-2.5-flash"  # adjust to whichever Gemini version is available in your project
+MODEL_NAME = "gemini-2.0-flash-001"  # adjust to whichever Gemini version is available in your project
 
 SYSTEM_INSTRUCTIONS = """You are checking whether a patient's vaccination record satisfies a state's school immunization requirements.
 
