@@ -1,8 +1,8 @@
 """
 model_gemini.py
 
-Real model integration using Gemini via Vertex AI. Same output shape as
-compare.py's stub (ComparisonResult), so results are directly comparable.
+Compares a patient's immunization ledger against a state's requirements
+using Gemini via Vertex AI.
 """
 
 import json
@@ -16,16 +16,16 @@ For each requirement in the state's requirement list:
 1. Check if the requirement applies to this patient given their grade level (see grade_or_age_range). If not, mark it "not_applicable" and do not evaluate it further.
 2. If it applies, calculate the patient's age at the date of each relevant dose (using date_of_birth and each dose_date).
 3. Read the notes field carefully -- it may describe alternate, reduced dose counts that are acceptable if specific doses were given at or after a specific age. Apply whichever rule the patient's actual dose ages satisfy, using the MOST FAVORABLE rule that legitimately applies.
-4. Assign a status using these EXACT definitions -- follow them precisely, do not deviate:
+4. Assign a status using these exact definitions:
    - "met": doses_received >= doses_required (after applying any conditional reduction from step 3)
-   - "partial": doses_received is greater than 0 but less than doses_required. IMPORTANT: if the patient has received at least 1 relevant dose, the status MUST be "partial", never "missing", even if they are far short of the requirement.
+   - "partial": doses_received is greater than 0 but less than doses_required
    - "missing": doses_received is exactly 0
    - "not_applicable": the requirement does not apply to this patient's grade/age (per step 1)
    - "needs_review": a required piece of information (date_of_birth, a dose_date) is missing and is necessary to evaluate a conditional rule
-5. Double check your status assignment against doses_received and doses_required using the definitions above before finalizing your answer. A common mistake is marking a disease "missing" when doses_received is actually greater than 0 -- verify this does not happen.
-6. Explain your reasoning in the notes field for any case where you applied a conditional/reduced-dose rule rather than just the base dose count.
+5. Verify the status assignment against doses_received and doses_required using the definitions above before finalizing.
+6. Explain the reasoning in the notes field for any case where a conditional/reduced-dose rule was applied.
 
-Do not guess or infer missing dates. If date_of_birth or a dose_date is missing and it's required to evaluate a conditional rule, use "needs_review" per the definitions above rather than guessing.
+Do not guess or infer missing dates. If date_of_birth or a dose_date is missing and it's required to evaluate a conditional rule, use "needs_review" rather than guessing.
 
 Return ONLY a JSON object matching this exact shape, no other text, no markdown formatting:
 {
@@ -63,14 +63,7 @@ State requirements:
     response = model.generate_content(prompt)
     cleaned = clean_json_response(response.text)
 
-    try:
-        result = json.loads(cleaned)
-    except json.JSONDecodeError as e:
-        print(f"Failed to parse model response as JSON: {e}")
-        print(f"Raw response: {response.text[:500]}")
-        raise
-
-    return result
+    return json.loads(cleaned)
 
 
 def run_model_comparison(ledger_path: str, requirement_path: str, output_path: str, patient_grade_level: str = "K-12", limit: int = None):

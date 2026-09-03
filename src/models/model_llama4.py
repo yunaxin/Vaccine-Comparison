@@ -1,18 +1,26 @@
 """
-model_openai.py
+model_llama4.py
 
 Compares a patient's immunization ledger against a state's requirements
-using the OpenAI API.
+using Llama 4 via Vertex AI's Model-as-a-Service (MaaS) endpoint.
 
-Requires an OpenAI API key set as an environment variable:
-    OPENAI_API_KEY=sk-...
+Authenticates using Google Cloud Application Default Credentials -- no
+separate API key required. Requires the Llama Community License Agreement
+to be accepted once in Vertex AI Model Garden for this project.
+
+Available model IDs:
+    meta/llama-4-scout-17b-16e-instruct-maas
+    meta/llama-4-maverick-17b-128e-instruct-maas
 """
 
 import json
-import os
+import google.auth
+import google.auth.transport.requests
 from openai import OpenAI
 
-MODEL_NAME = "gpt-4o"
+PROJECT_ID = "vaccine-genie"
+REGION = "us-central1"
+MODEL_NAME = "meta/llama-4-scout-17b-16e-instruct-maas"
 
 SYSTEM_INSTRUCTIONS = """You are checking whether a patient's vaccination record satisfies a state's school immunization requirements.
 
@@ -31,29 +39,28 @@ For each requirement in the state's requirement list:
 
 Do not guess or infer missing dates. If date_of_birth or a dose_date is missing and it's required to evaluate a conditional rule, use "needs_review" rather than guessing.
 
-Return ONLY a JSON object matching this exact shape, no other text, no markdown formatting:
+Return ONLY a JSON object matching this exact shape, no other text, no markdown formatting, no code fences:
 {
   "patient_id": "...",
   "state": "...",
   "patient_grade_level": "...",
-  "model_used": "openai",
+  "model_used": "llama4",
   "overall_compliant": true/false,
   "per_disease": [
     {"disease": "...", "doses_required": N, "doses_received": N, "status": "met|partial|missing|not_applicable|needs_review", "notes": "..."}
   ]
 }"""
 
-_client = None
-
 
 def get_client():
-    global _client
-    if _client is None:
-        api_key = os.environ.get("OPENAI_API_KEY")
-        if not api_key:
-            raise ValueError("OPENAI_API_KEY environment variable not set.")
-        _client = OpenAI(api_key=api_key)
-    return _client
+    creds, _ = google.auth.default(scopes=["https://www.googleapis.com/auth/cloud-platform"])
+    auth_req = google.auth.transport.requests.Request()
+    creds.refresh(auth_req)
+
+    return OpenAI(
+        base_url=f"https://{REGION}-aiplatform.googleapis.com/v1/projects/{PROJECT_ID}/locations/{REGION}/endpoints/openapi",
+        api_key=creds.token,
+    )
 
 
 def clean_json_response(text: str) -> str:
@@ -82,7 +89,6 @@ State requirements:
             {"role": "system", "content": SYSTEM_INSTRUCTIONS},
             {"role": "user", "content": prompt},
         ],
-        response_format={"type": "json_object"},
     )
 
     raw_text = response.choices[0].message.content
