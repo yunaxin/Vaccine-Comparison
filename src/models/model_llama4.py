@@ -8,9 +8,8 @@ Authenticates using Google Cloud Application Default Credentials -- no
 separate API key required. Requires the Llama Community License Agreement
 to be accepted once in Vertex AI Model Garden for this project.
 
-Available model IDs:
-    meta/llama-4-scout-17b-16e-instruct-maas
-    meta/llama-4-maverick-17b-128e-instruct-maas
+Note: the Llama 4 API Service is hosted in us-east5, not the same region
+used for Gemini in this project (us-central1).
 """
 
 import json
@@ -19,8 +18,8 @@ import google.auth.transport.requests
 from openai import OpenAI
 
 PROJECT_ID = "vaccine-genie"
-REGION = "us-central1"
-MODEL_NAME = "meta/llama-4-scout-17b-16e-instruct-maas"
+REGION = "us-east5"
+MODEL_NAME = "meta/llama-4-maverick-17b-128e-instruct-maas"
 
 SYSTEM_INSTRUCTIONS = """You are checking whether a patient's vaccination record satisfies a state's school immunization requirements.
 
