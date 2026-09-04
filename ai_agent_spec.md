@@ -121,7 +121,9 @@ Two things worth knowing if this ever needs debugging again:
 
 Requires the Llama Community License Agreement to be accepted once in
 Vertex AI Model Garden for the project.
-Status: implemented, pending a first test run.
+Status: implemented and enabled; test calls currently return a 429
+(resource exhausted) error, most likely a billing verification issue on
+the project rather than anything wrong with the model name or region.
 
 ### OpenAI (`model_openai.py`)
 Called via the OpenAI API. Requires an `OPENAI_API_KEY` environment
@@ -175,7 +177,7 @@ Patient Profile (date_of_birth, institution_type, grade level) is
 specified in the original design doc but not yet populated by the
 pipeline.
 
-### State requirement notes are free text
+### State requirement notes are free text, not structured rules
 Every model parses conditional dose-reduction rules from free text at
 inference time. A more reliable but higher-effort alternative would be
 pre-structuring each conditional rule into a machine-readable format
@@ -190,5 +192,6 @@ ahead of time.
 3. Test a patient whose grade level should make a requirement
    `not_applicable`, and confirm it is correctly skipped rather than
    marked `missing`.
-4. Check specifically for the missing-vs-partial pattern described above,
-   since prompt wording differences between models could reintroduce it.
+4. Check that any disease with at least one dose on record is marked
+   `partial` rather than `missing`, and that dose counts are always
+   whole numbers, never `null`.
