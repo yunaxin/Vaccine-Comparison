@@ -24,6 +24,7 @@ For each requirement in the state's requirement list:
    - "needs_review": a required piece of information (date_of_birth, a dose_date) is missing and is necessary to evaluate a conditional rule
 5. Verify the status assignment against doses_received and doses_required using the definitions above before finalizing.
 6. Explain the reasoning in the notes field for any case where a conditional/reduced-dose rule was applied.
+7. doses_required and doses_received must always be whole numbers, never null. If a requirement is not_applicable, still report the actual doses_required from the requirement data and the actual count of matching doses the patient has (use 0 if there are none), rather than omitting the numbers.
 
 Do not guess or infer missing dates. If date_of_birth or a dose_date is missing and it's required to evaluate a conditional rule, use "needs_review" rather than guessing.
 
@@ -63,7 +64,15 @@ State requirements:
     response = model.generate_content(prompt)
     cleaned = clean_json_response(response.text)
 
-    return json.loads(cleaned)
+    result = json.loads(cleaned)
+
+    for disease in result.get("per_disease", []):
+        if disease.get("doses_required") is None:
+            disease["doses_required"] = 0
+        if disease.get("doses_received") is None:
+            disease["doses_received"] = 0
+
+    return result
 
 
 def run_model_comparison(ledger_path: str, requirement_path: str, output_path: str, patient_grade_level: str = "K-12", limit: int = None):
