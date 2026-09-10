@@ -1,18 +1,20 @@
 """
-model_openai.py
+model_claude.py
 
 Compares a patient's immunization ledger against a state's requirements
-using the OpenAI API.
+using Claude via Vertex AI's Model Garden (Model-as-a-Service).
 
-Requires an OpenAI API key set as an environment variable:
-    OPENAI_API_KEY=sk-...
+Authenticates using Google Cloud Application Default Credentials -- no
+separate API key required. Uses Anthropic's own SDK rather than an
+OpenAI-compatible endpoint, since that's how Claude is exposed on Vertex.
 """
 
 import json
-import os
-from openai import OpenAI
+from anthropic import AnthropicVertex
 
-MODEL_NAME = "gpt-4o"
+PROJECT_ID = "vaccine-genie"
+REGION = "global"
+MODEL_NAME = "claude-sonnet-5"
 
 SYSTEM_INSTRUCTIONS = """You are checking whether a patient's vaccination record satisfies a state's school immunization requirements.
 
@@ -28,6 +30,7 @@ For each requirement in the state's requirement list:
    - "needs_review": a required piece of information (date_of_birth, a dose_date) is missing and is necessary to evaluate a conditional rule
 5. Verify the status assignment against doses_received and doses_required using the definitions above before finalizing.
 6. Explain the reasoning in the notes field for any case where a conditional/reduced-dose rule was applied.
+7. doses_required and doses_received must always be whole numbers, never null.
 
 Do not guess or infer missing dates. If date_of_birth or a dose_date is missing and it's required to evaluate a conditional rule, use "needs_review" rather than guessing.
 
@@ -36,7 +39,7 @@ Return ONLY a JSON object matching this exact shape, no other text, no markdown 
   "patient_id": "...",
   "state": "...",
   "patient_grade_level": "...",
-  "model_used": "openai",
+  "model_used": "claude",
   "overall_compliant": true/false,
   "per_disease": [
     {"disease": "...", "doses_required": N, "doses_received": N, "status": "met|partial|missing|not_applicable|needs_review", "notes": "..."}
@@ -49,10 +52,7 @@ _client = None
 def get_client():
     global _client
     if _client is None:
-        api_key = os.environ.get("OPENAI_API_KEY")
-        if not api_key:
-            raise ValueError("OPENAI_API_KEY environment variable not set.")
-        _client = OpenAI(api_key=api_key)
+        _client = AnthropicVertex(project_id=PROJECT_ID, region=REGION)
     return _client
 
 
@@ -76,16 +76,14 @@ Patient grade level: {patient_grade_level}
 State requirements:
 {json.dumps(requirement_set, indent=2)}"""
 
-    response = client.chat.completions.create(
+    response = client.messages.create(
         model=MODEL_NAME,
-        messages=[
-            {"role": "system", "content": SYSTEM_INSTRUCTIONS},
-            {"role": "user", "content": prompt},
-        ],
-        response_format={"type": "json_object"},
+        max_tokens=2048,
+        system=SYSTEM_INSTRUCTIONS,
+        messages=[{"role": "user", "content": prompt}],
     )
 
-    raw_text = response.choices[0].message.content
+    raw_text = response.content[0].text
     cleaned = clean_json_response(raw_text)
 
     return json.loads(cleaned)

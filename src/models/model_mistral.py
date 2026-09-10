@@ -1,33 +1,17 @@
 """
-model_medgemma.py
+model_mistral.py
 
 Compares a patient's immunization ledger against a state's requirements
-using MedGemma, deployed as a Vertex AI endpoint.
+using a Mistral model via Vertex AI's Model Garden (Model-as-a-Service).
 
-Unlike Gemini and Llama 4, MedGemma is not available as a hosted
-Model-as-a-Service endpoint. It must be deployed to a dedicated Vertex AI
-endpoint before it can be called. Deployment provisions GPU resources and
-incurs cost while the endpoint is active.
+Authenticates using Google Cloud Application Default Credentials -- no
+separate API key required.
 
-One-time setup required before this file will work:
-
-1. Deploy MedGemma via Vertex AI Model Garden (console or CLI). Example CLI
-   command:
-
-    gcloud ai model-garden models deploy \\
-        --model="google/medgemma@medgemma-4b-it" \\
-        --region="us-central1" \\
-        --project="<PROJECT_ID>" \\
-        --accept-eula \\
-        --machine-type="g2-standard-24" \\
-        --accelerator-type="NVIDIA_L4" \\
-        --endpoint-display-name="medgemma-4b-it-endpoint"
-
-2. After deployment completes, note the endpoint ID from the deployment
-   output or the Vertex AI console, and set ENDPOINT_ID below.
-
-3. Remember to delete or scale down the endpoint when not in use, since
-   GPU-backed endpoints bill for uptime regardless of request volume.
+Before running, check Model Garden for the exact model ID and supported
+region for this project (search "Mistral" in Model Garden and open a
+model card) -- Mistral Large (24.11) is deprecated as of October 23, 2025
+and shuts down January 23, 2026, so confirm which current model this
+project has access to rather than assuming an older ID still works.
 """
 
 import json
@@ -36,8 +20,8 @@ import google.auth.transport.requests
 from openai import OpenAI
 
 PROJECT_ID = "vaccine-genie"
-REGION = "us-central1"
-ENDPOINT_ID = ""  # set after deploying MedGemma, see module docstring
+REGION = ""  # confirm in Model Garden -- check the Mistral Medium 3 model card for supported regions
+MODEL_NAME = "mistral-medium-3"
 
 SYSTEM_INSTRUCTIONS = """You are checking whether a patient's vaccination record satisfies a state's school immunization requirements.
 
@@ -53,6 +37,7 @@ For each requirement in the state's requirement list:
    - "needs_review": a required piece of information (date_of_birth, a dose_date) is missing and is necessary to evaluate a conditional rule
 5. Verify the status assignment against doses_received and doses_required using the definitions above before finalizing.
 6. Explain the reasoning in the notes field for any case where a conditional/reduced-dose rule was applied.
+7. doses_required and doses_received must always be whole numbers, never null.
 
 Do not guess or infer missing dates. If date_of_birth or a dose_date is missing and it's required to evaluate a conditional rule, use "needs_review" rather than guessing.
 
@@ -61,7 +46,7 @@ Return ONLY a JSON object matching this exact shape, no other text, no markdown 
   "patient_id": "...",
   "state": "...",
   "patient_grade_level": "...",
-  "model_used": "medgemma",
+  "model_used": "mistral",
   "overall_compliant": true/false,
   "per_disease": [
     {"disease": "...", "doses_required": N, "doses_received": N, "status": "met|partial|missing|not_applicable|needs_review", "notes": "..."}
@@ -70,10 +55,10 @@ Return ONLY a JSON object matching this exact shape, no other text, no markdown 
 
 
 def get_client():
-    if not ENDPOINT_ID:
+    if not REGION or not MODEL_NAME:
         raise ValueError(
-            "ENDPOINT_ID is not set. Deploy MedGemma to a Vertex AI endpoint "
-            "first -- see the instructions in this module's docstring."
+            "REGION and MODEL_NAME must be set. Check Model Garden for "
+            "the exact model ID and region for Mistral in this project."
         )
 
     creds, _ = google.auth.default(scopes=["https://www.googleapis.com/auth/cloud-platform"])
@@ -81,7 +66,7 @@ def get_client():
     creds.refresh(auth_req)
 
     return OpenAI(
-        base_url=f"https://{REGION}-aiplatform.googleapis.com/v1/projects/{PROJECT_ID}/locations/{REGION}/endpoints/{ENDPOINT_ID}",
+        base_url=f"https://{REGION}-aiplatform.googleapis.com/v1/projects/{PROJECT_ID}/locations/{REGION}/endpoints/openapi",
         api_key=creds.token,
     )
 
@@ -107,7 +92,7 @@ State requirements:
 {json.dumps(requirement_set, indent=2)}"""
 
     response = client.chat.completions.create(
-        model="medgemma",
+        model=MODEL_NAME,
         messages=[
             {"role": "system", "content": SYSTEM_INSTRUCTIONS},
             {"role": "user", "content": prompt},
