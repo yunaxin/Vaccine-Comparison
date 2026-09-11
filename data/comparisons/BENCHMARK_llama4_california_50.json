@@ -1,0 +1,4303 @@
+[
+  {
+    "patient_id": "fe621c76-a591-b7be-5668-b77f00240d82",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, but 5 doses required; 1 dose was Td given at age 22, which is considered valid for Tdap requirement at age >=7"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria; 1 dose received, Td given at age 22"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Tdap dose required for 7th grade advancement; no Tdap doses received at age >=7"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, 3 doses required"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only"
+      }
+    ]
+  },
+  {
+    "patient_id": "5f01f823-c8e8-9e40-c911-54b7b1ad843a",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, but 5 doses required; conditional rules not applicable due to insufficient doses"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, same dose-reduction rules as Diphtheria; conditional rules not applicable due to insufficient doses"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for DTaP series; separate Tdap requirement for 7th grade applies but no doses received"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Tdap dose required for 7th grade advancement, but no doses received at age >=7 years"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only, not K-12"
+      }
+    ]
+  },
+  {
+    "patient_id": "cba958fc-9355-f095-bf77-d56a20511339",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, but 5 doses required; 1 dose was given at age 22 years, which is considered valid as Tdap dose"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria; 1 dose received, given at age 22 years, which counts towards the series"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Pertussis directly, though a combined vaccine was given"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 1,
+        "status": "met",
+        "notes": "1 Tdap dose given at age 22 years meets the requirement for 7th-12th grade"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 2,
+        "status": "partial",
+        "notes": "2 doses received out of 3 required"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Requirement is for Pre-Kindergarten only"
+      }
+    ]
+  },
+  {
+    "patient_id": "1f0dab59-2cb5-5b52-9687-536444ee049b",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, but requirement is 5 doses or 4 doses if at least one dose given at age >= 4 years, or 3 doses if Tdap given at age >= 7. The dose was given at age 51, which is >= 7, but doesn't meet the Tdap requirement for 3 doses."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria. 1 dose received. The dose was given at age 51, which is >= 7, but doesn't meet the Tdap requirement for 3 doses."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for the TK/K-12 requirement. However, patient is in 7th-12th grade and needs 1 Tdap dose at age >= 7. No Tdap dose recorded."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "1 Tdap dose required for 7th grade advancement/admission through 12th grade at age >= 7. No Tdap dose recorded at age >= 7."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only, not K-12"
+      }
+    ]
+  },
+  {
+    "patient_id": "a7796e87-b978-ed56-31f8-c93095b90340",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, but 5 doses required; 1 dose was Td given at age 22 years, which could be considered as Tdap for a reduced dose count of 4 if it were Tdap, but it's Td"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria; 1 dose received, Td given at age 22 years; could be considered as meeting Tdap requirement for 7th grade but doesn't change overall count"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No Pertussis-specific doses received"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Tdap dose required for 7th grade advancement; no Tdap dose received at age >= 7 years"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No Measles-specific doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No Mumps-specific doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No Rubella-specific doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, 3 doses required"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No Varicella-specific doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only"
+      }
+    ]
+  },
+  {
+    "patient_id": "a41e603d-0d7c-c89f-3be7-74117adc6390",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12, so it applies."
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12. Patient received 1 dose at age 51, which is after age 7, so it counts towards Tdap requirement, reducing required doses to 3. Still, 1 dose is less than 3."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria apply. Patient received 1 dose at age 51, which counts towards Tdap requirement, reducing required doses to 3. Still, 1 dose is less than 3."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12. No Pertussis-specific doses received."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to 7th-12th grade; patient is in K-12, so it applies. No Tdap dose given at age >=7 years."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12. No Measles-specific doses received."
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12. No Mumps-specific doses received."
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12. No Rubella-specific doses received."
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12. No Hepatitis B doses received."
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12. No Varicella doses received."
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Requirement is for Pre-Kindergarten only, not K-12."
+      }
+    ]
+  },
+  {
+    "patient_id": "f2d6c82f-b4c7-a77f-75ea-4c91b3db2cf8",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No polio vaccine doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Tdap dose given at age 11 years, which is >=7 years. Doses required reduced to 4 due to Tdap dose at age >=7. Still, doses_received (1) is less than doses_required (4)"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria. Tdap dose given at age 11 years, which is >=7 years. Doses required reduced to 4 due to Tdap dose at age >=7. Still, doses_received (1) is less than doses_required (4)"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria. Tdap dose given at age 11 years, which is >=7 years. Doses required reduced to 4 due to Tdap dose at age >=7. Still, doses_received (1) is less than doses_required (4)"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 1,
+        "status": "met",
+        "notes": "Tdap dose given at age 11 years, which is >=7 years. Meets the requirement for 7th grade advancement/admission"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No measles vaccine doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No mumps vaccine doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No rubella vaccine doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No hepatitis B vaccine doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No varicella vaccine doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only, not K-12"
+      }
+    ]
+  },
+  {
+    "patient_id": "91be1bd7-1e12-99a1-d3fd-6eea14e5d70f",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, 5 required; conditional rules not applicable due to insufficient doses"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same as Diphtheria; 1 dose received, 5 required; conditional rules not applicable due to insufficient doses"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Pertussis directly; DTaP/Tdap doses not recorded"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Tdap dose required for 7th grade advancement; no Tdap dose recorded at age >= 7"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 3,
+        "status": "met",
+        "notes": "3 doses received, meets requirement"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Not required for K-12"
+      }
+    ]
+  },
+  {
+    "patient_id": "245f81d6-ebcb-1760-2db3-1bfccfd0bd3a",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": true,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 4,
+        "status": "met",
+        "notes": "4 doses received, meets the requirement"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 5,
+        "status": "met",
+        "notes": "5 doses received, meets the requirement"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 5,
+        "status": "met",
+        "notes": "5 doses received, meets the requirement"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 5,
+        "status": "met",
+        "notes": "5 doses received, meets the requirement"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 5,
+        "status": "met",
+        "notes": "Tdap dose given at age >=7 years is required for 7th grade advancement. Patient is in K-12 and has received 5 doses, which includes DTaP doses. The requirement is met as the patient has received more than the required 1 Tdap dose."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 2,
+        "status": "met",
+        "notes": "2 doses received, both given at age >=1 year, meets the requirement"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 2,
+        "status": "met",
+        "notes": "2 doses received, both given at age >=1 year, meets the requirement"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 2,
+        "status": "met",
+        "notes": "2 doses received, both given at age >=1 year, meets the requirement"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 3,
+        "status": "met",
+        "notes": "3 doses received, meets the requirement"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 2,
+        "status": "met",
+        "notes": "2 doses received, meets the requirement"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 3,
+        "status": "not_applicable",
+        "notes": "Not required for K-12, only for pre-kindergarten"
+      }
+    ]
+  },
+  {
+    "patient_id": "6b82c03f-4c62-a4d2-023c-9815b8358f20",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": true,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 4,
+        "status": "met",
+        "notes": "4 doses received, meets the requirement"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 5,
+        "status": "met",
+        "notes": "5 doses received, meets the requirement"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 5,
+        "status": "met",
+        "notes": "5 doses received, meets the requirement"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 5,
+        "status": "met",
+        "notes": "5 doses received, meets the requirement"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 5,
+        "status": "met",
+        "notes": "Tdap dose is part of the 5 DTaP doses received, meets the requirement"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 2,
+        "status": "met",
+        "notes": "2 doses received at age >=1 year, meets the requirement"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 2,
+        "status": "met",
+        "notes": "2 doses received at age >=1 year, meets the requirement"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 2,
+        "status": "met",
+        "notes": "2 doses received at age >=1 year, meets the requirement"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 3,
+        "status": "met",
+        "notes": "3 doses received, meets the requirement"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 2,
+        "status": "met",
+        "notes": "2 doses received, meets the requirement"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 3,
+        "status": "not_applicable",
+        "notes": "Not required for K-12 grade level"
+      }
+    ]
+  },
+  {
+    "patient_id": "93ee1e59-72a4-0103-39b9-c53658226ff0",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 4,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Requirement applies to TK/K-12; patient received 1 dose; 5 doses required, OR 4 if >=1 dose at age>=4. Patient is 22 years old at dose date, so age condition met. Still, only 1 dose received."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 4,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria; patient received 1 dose; 5 doses required, OR 4 if >=1 dose at age>=4. Patient is 22 years old at dose date, so age condition met. Still, only 1 dose received."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no doses received"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "SEPARATE requirement for 7th-12th grade; patient is in K-12, so this applies; no Tdap dose given at age >=7 years"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Requirement applies to TK/K-12; patient received 1 dose out of 3 required"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only, NOT required K-12; patient is in K-12"
+      }
+    ]
+  },
+  {
+    "patient_id": "3c3acd7e-9e6e-1a80-eeee-f56757387c4d",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Patient received 1 dose, but 5 doses are required. Conditional rules may apply, but not enough information to determine if they reduce the required doses."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same as Diphtheria, patient received 1 dose. Conditional rules for Diphtheria apply here as well."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Pertussis directly, though there is a Td dose that could imply some protection."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Tdap dose required for 7th grade advancement, but no such dose found at age >= 7 years."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Requirement is for Pre-Kindergarten only"
+      }
+    ]
+  },
+  {
+    "patient_id": "cf90297d-6047-8d20-e0d5-1331fcbba0b8",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Requirement applies to TK/K-12; patient received 1 dose, but the dose date is in the future (2025-04-11), and the patient's age at that time will be 31 years. The requirement is for 5 doses or 4 doses if at least one dose is given at age >= 4 years, or 3 doses if at least one Tdap dose is given at age >= 7 years."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same as Diphtheria; patient received 1 dose on 2025-04-11. Follows same dose-reduction rules as Diphtheria."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12. Follows same dose-reduction rules as Diphtheria."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to 7th-12th grade; patient is in K-12, which includes this range. Requires 1 Tdap dose at age >= 7 years."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Requirement is for Pre-Kindergarten only; patient is in K-12"
+      }
+    ]
+  },
+  {
+    "patient_id": "e3e0dfb2-7f65-65d3-14d9-b60f1ae391cf",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, but 5 doses required; 1 dose was given at age 51, which is >=7, so it counts towards Tdap requirement, but doesn't meet the full requirement"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria; 1 dose received, given at age 51, counts as Tdap dose, reducing required doses to 4, but still doesn't meet the requirement"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Pertussis directly, but same dose-reduction rules as Diphtheria apply; however, no relevant doses to evaluate"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Separate requirement for 7th-12th grade; no Tdap dose given at age >=7 years"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only, not K-12"
+      }
+    ]
+  },
+  {
+    "patient_id": "8a9c2020-eb9a-dc21-3eca-40e9b84c3581",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Patient received 1 dose of Td vaccine on 2024-10-29 at age 81. Tdap dose may meet 7th grade requirement, but patient is beyond 7th grade"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria. Patient received 1 dose of Td vaccine on 2024-10-29 at age 81"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Pertussis directly, though Td vaccine received may imply some protection"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Tdap dose required for 7th grade advancement, but patient is beyond that age and no Tdap dose recorded"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only"
+      }
+    ]
+  },
+  {
+    "patient_id": "9c798cad-d40e-9ce0-cdd1-ad45a91749a6",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, but 5 doses required; 1 Tdap dose at age >=7 could reduce requirement to 3 doses, but no such dose is recorded"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria; 1 dose received, Td given at age 22; no reduction applies"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Pertussis directly, though Td was given which may contain Pertussis component"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Tdap dose required for 7th grade advancement; no Tdap dose recorded at age >=7"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, 3 doses required; no age-conditional reduction noted"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only, patient is in K-12"
+      }
+    ]
+  },
+  {
+    "patient_id": "b07fc407-3857-309a-d77c-dc1b62776087",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received at age 31, 4 doses short of the standard requirement. Conditional rule applied: 4 doses required if at least one dose given at age >=4 years, or 3 doses if Tdap given at age >=7. Neither condition met."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria. 1 dose received at age 31, 4 doses short of the standard requirement. Conditional rule applied: 4 doses required if at least one dose given at age >=4 years, or 3 doses if Tdap given at age >=7. Neither condition met."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Pertussis directly, though Td vaccine was given which may contain Pertussis component (Tdap). However, the vaccine name 'Td' does not confirm presence of Pertussis component."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Separate requirement for 7th-12th grade: 1 Tdap dose given at age >=7 years. No Tdap doses received."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only, not K-12"
+      }
+    ]
+  },
+  {
+    "patient_id": "cfffd931-a052-128d-d0dd-7cbda6ad8465",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 3,
+        "status": "partial",
+        "notes": "Patient received 3 doses, but the requirement is 4 doses. However, the patient is 0.43 years old at the third dose, which is less than 4 years. Hence, the reduced dose count rule does not apply."
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No Tdap dose received at age >= 7 years."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received."
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received."
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received."
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received."
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received."
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only."
+      },
+      {
+        "disease": "Influenza",
+        "doses_required": null,
+        "doses_received": 1,
+        "status": "not_applicable",
+        "notes": "Influenza is not in the state requirements list."
+      }
+    ]
+  },
+  {
+    "patient_id": "bab42935-7382-afb9-ae91-d40a0580de5b",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, 5 required; 1 Tdap dose at age >=7 could reduce to 3 doses required, but not met here"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same rules as Diphtheria; 1 dose received, Tdap dose given at age 21; could be 3 doses required if Tdap rule applies, but not met"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Pertussis directly; Tdap dose for Diphtheria/Tetanus doesn't count directly here"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "1 Tdap dose required for 7th grade and above; no Tdap dose recorded for Pertussis directly"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 3,
+        "status": "met",
+        "notes": "3 doses received, meets requirement"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Not required for K-12"
+      }
+    ]
+  },
+  {
+    "patient_id": "a9b60932-d725-dea6-fd7d-7596e770bbf3",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Patient received 1 dose at age 81.33 years. Conditional rule applied: 3 doses required if >=1 Tdap dose at age>=7. Since Tdap was given at age>=7, doses_required could be 3, but patient still doesn't meet it."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria. Patient received 1 dose at age 81.33 years. Conditional rule applied: 3 doses required if >=1 Tdap dose at age>=7. Since Tdap was given at age>=7, doses_required could be 3, but patient still doesn't meet it."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Pertussis directly, though Tdap dose was given which is related."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 1,
+        "status": "met",
+        "notes": "Tdap dose given at age 81.33 years meets the requirement for 7th-12th grade."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only, not K-12"
+      }
+    ]
+  },
+  {
+    "patient_id": "c782a0b7-81b3-799f-4e75-895765d16a15",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 3,
+        "status": "partial",
+        "notes": "3 doses received, requirement is 4 doses for TK/K-12. Conditional rule: 3 doses acceptable if at least one dose given at age >= 4 years. The patient received 3 doses, with the last dose given at age 0.62 years, which does not satisfy the conditional rule."
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 3,
+        "status": "partial",
+        "notes": "3 doses received, requirement is 5 doses for TK/K-12. Conditional rule: 4 doses if at least one dose given at age >= 4 years, or 3 doses if at least one Tdap dose given at age >= 7 years. The patient received 3 doses, with the last dose given at age 0.62 years. No Tdap dose was given at age >= 7 years."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 3,
+        "status": "partial",
+        "notes": "Same as Diphtheria, 3 doses received. Last dose given at age 0.62 years. No Tdap dose was given at age >= 7 years."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 3,
+        "status": "partial",
+        "notes": "Same as Diphtheria, 3 doses received. Last dose given at age 0.62 years. No Tdap dose was given at age >= 7 years."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement is 1 Tdap dose given at age >= 7 years for 7th-12th grade. The patient is in K-12 and has not received a Tdap dose at age >= 7 years."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, requirement is 2 doses for TK/K-12. The dose was given at age 1.19 years, satisfying the age requirement."
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same as Measles, 1 dose received. The dose was given at age 1.19 years, satisfying the age requirement."
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same as Measles, 1 dose received. The dose was given at age 1.19 years, satisfying the age requirement."
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 3,
+        "status": "met",
+        "notes": "3 doses received, meeting the requirement for TK/K-12."
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, requirement is 2 doses for TK/K-12."
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 3,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only, not for K-12."
+      }
+    ]
+  },
+  {
+    "patient_id": "fa2691e2-5f0c-eac4-5794-96997f692d06",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Patient received 1 dose, but requirement is 5 doses. One Tdap dose at age >=7 could reduce requirement to 3 doses, but no such dose is recorded."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria apply. Patient received 1 dose at age 61, which is Td. Requirement is 5 doses, but could be reduced to 3 if Tdap was given at age >=7. However, the dose given was Td, not Tdap."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Pertussis directly, though there is a Td dose that covers Tetanus and Diphtheria."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Tdap dose required for 7th grade advancement. No Tdap dose recorded."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only"
+      }
+    ]
+  },
+  {
+    "patient_id": "754d7fce-7e70-9f29-e45a-7390a379d13d",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, 5 required; conditional rules not applicable due to insufficient doses"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same as Diphtheria; 1 dose received, 5 required; conditional rules not applicable due to insufficient doses"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for DTaP series; separate Tdap requirement for 7th grade not evaluated due to missing dose dates"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Tdap dose required for 7th-12th grade; no Tdap doses found"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, 3 required; no conditional rules apply"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Requirement only applies to Pre-Kindergarten"
+      }
+    ]
+  },
+  {
+    "patient_id": "269c9001-961e-5c04-c250-442ec7c276c5",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, but 5 doses required; conditional rules not applicable due to insufficient doses"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, same dose-reduction rules as Diphtheria; conditional rules not applicable due to insufficient doses"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Pertussis directly, same dose-reduction rules as Diphtheria"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Tdap dose required for 7th grade advancement, no such dose recorded"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Requirement is for Pre-Kindergarten only"
+      }
+    ]
+  },
+  {
+    "patient_id": "9338baa0-811c-3dfb-4c38-e7910e8b7236",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 3,
+        "status": "partial",
+        "notes": "3 doses received, 4 required. Conditional rule: 3 doses acceptable if at least one dose given at age >= 4 years. Patient received 3 doses, with the third dose given at age 0.69 years, not meeting the conditional rule."
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 4,
+        "status": "partial",
+        "notes": "4 doses received, 5 required. Conditional rule applied: 4 doses acceptable if at least one dose given at age >= 4 years. The fourth dose was given at age 1.44 years, not meeting the condition. No Tdap dose was given at age >= 7 years."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 4,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria apply. 4 doses received, with the fourth dose given at age 1.44 years. The condition for reduced doses is not met."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 4,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria apply. 4 doses received, with the fourth dose given at age 1.44 years. The condition for reduced doses is not met."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Separate requirement for 7th-12th grade: 1 Tdap dose at age >= 7 years. Patient is in K-12, but the specific grade is not provided. Assuming the patient is not in 7th grade or higher, this requirement is not applicable based on grade level alone. However, since no Tdap dose was given at age >= 7, and the patient is currently below 7 years old, the status is 'missing' as the condition cannot be met yet."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, 2 required. The dose was given at age 1.19 years, meeting the age requirement (>= 1 year)."
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, 2 required. The dose was given at age 1.19 years, meeting the age requirement (>= 1 year)."
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, 2 required. The dose was given at age 1.19 years, meeting the age requirement (>= 1 year)."
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 3,
+        "status": "met",
+        "notes": "3 doses received, meeting the requirement."
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, 2 required."
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 3,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only. Patient is in K-12."
+      }
+    ]
+  },
+  {
+    "patient_id": "5954bd0e-3f91-a78c-9dbf-b5348337199b",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No polio vaccine doses recorded"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Patient received 1 dose at age 51.56 years. Requirement is 5 doses, or 4 doses if at least one dose given at age >=4 years, or 3 doses if Tdap given at age >=7. The single dose given meets the age >=4 condition, reducing the requirement to 4 doses."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria apply. Patient received 1 dose at age 51.56 years. This meets the age >=4 condition, reducing the requirement to 4 doses."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No Pertussis vaccine doses recorded"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "7th-12th grade requirement for 1 Tdap dose given at age >=7 years. No Tdap doses recorded for Pertussis."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No Measles vaccine doses recorded"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No Mumps vaccine doses recorded"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No Rubella vaccine doses recorded"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No Hepatitis B vaccine doses recorded"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No Varicella vaccine doses recorded"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only, not K-12"
+      }
+    ]
+  },
+  {
+    "patient_id": "1ce73d11-4159-f37c-a2b6-259553199061",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Patient received 1 dose, but requirement is 5 doses or 4 doses if at least one dose given at age >=4 years, or 3 doses if at least one Tdap dose given at age >=7 years. The dose was given at age 42, so the rule for 3 doses if Tdap at age >=7 applies, making doses_required=3. Still, doses_received (1) is less than doses_required (3)."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria apply. Patient received 1 dose at age 42, so doses_required could be reduced to 3 based on Tdap dose at age >=7. Still, doses_received (1) is less than doses_required (3)."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Pertussis directly, though Td/Tdap doses count towards related diseases."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 1,
+        "status": "met",
+        "notes": "1 Tdap dose given at age 42 (>=7 years) meets the requirement for 7th-12th grade."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only, not K-12"
+      }
+    ]
+  },
+  {
+    "patient_id": "8d2c71f3-02ed-b2cd-5aa2-dbd6d41e3de6",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Patient received 1 dose at age 81.17 years. The requirement is 5 doses, or 4 doses if at least one dose is given at age >= 4 years, or 3 doses if at least one Tdap dose is given at age >= 7 years. The dose was given at an age that satisfies the condition for reduction, but still doesn't meet the reduced requirement."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria. Patient received 1 dose at age 81.17 years. The dose was given at an age that satisfies the condition for reduction, but still doesn't meet the reduced requirement."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Pertussis directly, though there is a dose of DTaP-like vaccine (Td) that could potentially count towards Pertussis requirement under certain conditions. However, the primary disease targeted by Td is Tetanus and Diphtheria."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "1 Tdap dose required for 7th grade advancement/admission through 12th grade. No Tdap dose received at age >= 7 years."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only, NOT required K-12"
+      }
+    ]
+  },
+  {
+    "patient_id": "e7529149-2aed-8eca-a50d-9962eec2cfb7",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Patient received 1 dose, requirement is 4 doses for TK/K-12. Conditional rule: 3 doses if >=1 dose given at age >=4 years. Patient's dose was given at age 5 years, so this rule could apply, but they still need 2 more doses."
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 2,
+        "status": "partial",
+        "notes": "Patient received 2 doses, requirement is 5 doses for TK/K-12. Conditional rule: 4 doses if >=1 dose at age >=4 years. Patient's second dose was given at age 11 years, so this rule applies, reducing required doses to 4. Patient still needs 2 more doses."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 2,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria. Patient received 2 doses, with the second dose given at age 11 years. The conditional rule reduces required doses to 4. Patient still needs 2 more doses."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 2,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria. Patient received 2 doses, with the second dose given at age 11 years. The conditional rule reduces required doses to 4. Patient still needs 2 more doses."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 1,
+        "status": "met",
+        "notes": "Tdap dose given at age 11 years meets the requirement for 7th-12th grade."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Patient received 1 dose at age 4 years, requirement is 2 doses for TK/K-12. Doses must be given at age >=1 year, so this dose is valid. Patient needs 1 more dose."
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same as Measles. Patient received 1 dose at age 4 years, which is valid. Patient needs 1 more dose."
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same as Measles. Patient received 1 dose at age 4 years, which is valid. Patient needs 1 more dose."
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received."
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Patient received 1 dose, requirement is 2 doses for TK/K-12. Patient needs 1 more dose."
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only, not K-12."
+      }
+    ]
+  },
+  {
+    "patient_id": "6b18be05-8f92-4199-e09a-7d462a3828f7",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 2,
+        "status": "partial",
+        "notes": "Patient received 2 doses, but 5 are required. Conditional rule applied: 4 doses required if at least one dose given at age >= 4 years, or 3 doses if Tdap given at age >= 7. However, the doses received do not meet these conditions."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 2,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria. Patient received 2 doses, but 5 are required. Conditional rule applied: 4 doses required if at least one dose given at age >= 4 years, or 3 doses if Tdap given at age >= 7. The doses received were given at ages 41 and 42, satisfying the age >= 7 condition for Tdap, reducing the requirement to 3 doses. Still, the patient is short 1 dose."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_required_for_grade": 1,
+        "doses_received": 1,
+        "status": "met",
+        "notes": "Two separate requirements: 5 doses for TK/K-12 with conditional reductions, and 1 Tdap dose at age >= 7 for 7th-12th grade. For TK/K-12, patient received 1 dose, which is partial. For 7th-12th grade, patient received 1 Tdap dose at age 42, meeting the requirement."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only"
+      }
+    ]
+  },
+  {
+    "patient_id": "03f66b92-3aca-380b-e31c-492cbb90c056",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Requirement applies to TK/K-12; patient received 1 dose at age 41.5 years; no age-conditional reduction applies"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria; patient received 1 dose at age 41.5 years; no age-conditional reduction applies"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no doses received"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to 7th-12th grade; patient is in K-12; no Tdap dose given at age >=7 years"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Requirement applies to Pre-Kindergarten only; patient is in K-12"
+      }
+    ]
+  },
+  {
+    "patient_id": "62008b79-7fe9-7bf0-642b-578e9edfbe5d",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No polio doses recorded"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, 5 required; 1 dose at age 42 years. Conditional rule applied: 4 doses required if at least 1 dose given at age >=4 years, or 3 doses if Tdap given at age >=7. Patient is 42, so Tdap at age >=7 would apply, making doses_required=3. Still, doses_received (1) is less than required (3)."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria apply. 1 dose received, 5 required; 1 dose at age 42 years. Conditional rule applied as in Diphtheria, making doses_required=3. Still, doses_received (1) is less than required (3)."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No Pertussis doses recorded directly, though Td vaccine (which could contain Pertussis as Tdap) is recorded. However, the specific Pertussis requirement for K-12 is not directly assessable with the given data."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 1,
+        "status": "met",
+        "notes": "1 Tdap dose required for 7th-12th grade. 1 dose of Td given at age 42, which may be considered Tdap, meeting the requirement."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No Measles doses recorded"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No Mumps doses recorded"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No Rubella doses recorded"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No Hepatitis B doses recorded"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No Varicella doses recorded"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only, not K-12"
+      }
+    ]
+  },
+  {
+    "patient_id": "ad1bff3b-54d6-70ac-db3f-4cb7447ecbce",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Requirement applies to TK/K-12; patient received 1 dose at age 51.02 years; no conditional reduction applies"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria; patient received 1 dose at age 51.02 years; no conditional reduction applies"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no doses received"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to 7th-12th grade; patient is in K-12; no Tdap dose given at age >=7 years"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Requirement applies to Pre-Kindergarten only; patient is in K-12"
+      }
+    ]
+  },
+  {
+    "patient_id": "b7582b3d-8bb5-b441-b511-c4c874440c5f",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 3,
+        "status": "partial",
+        "notes": "3 doses received, requirement is 4 doses. Conditional rule: 3 doses acceptable if at least one dose given at age >= 4 years. Patient received doses at ages 0.27, 0.44, and 1.19 years, not meeting the conditional rule."
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received."
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received."
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received."
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 3,
+        "status": "met",
+        "notes": "3 doses received, meeting the requirement."
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received."
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 2,
+        "status": "not_applicable",
+        "notes": "Requirement is for Pre-Kindergarten only."
+      }
+    ]
+  },
+  {
+    "patient_id": "6088e633-f469-5de1-ebbb-43076b51fc7d",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Requirement applies to TK/K-12; patient received 1 dose, most recent at age 42 years; 1 Tdap dose at age >=7 reduces requirement to 3 doses, but patient doesn't meet this condition"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria; patient received 1 dose at age 42; 1 Tdap dose at age >=7 reduces requirement to 3 doses, but patient doesn't meet this condition"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no Pertussis doses received"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to 7th-12th grade; patient is in K-12; no Tdap dose given at age >=7 received"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no Measles doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no Mumps doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no Rubella doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no Hepatitis B doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12; no Varicella doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Requirement applies to Pre-Kindergarten only; patient is in K-12"
+      }
+    ]
+  },
+  {
+    "patient_id": "4fd66df8-345c-cb0e-39cd-b8b364e43023",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Polio"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Patient received 1 dose of Td vaccine on 2025-07-22. The requirement is 5 doses, but can be reduced to 4 if at least one dose is given at age >= 4 years, or 3 if at least one Tdap dose is given at age >= 7 years. Patient's age at dose administration is 41 years, so the dose counts towards the reduction. However, the patient still doesn't meet the requirement."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same as Diphtheria, patient received 1 dose on 2025-07-22 at age 41. Follows same dose-reduction rules as Diphtheria."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Pertussis. Follows same dose-reduction rules as Diphtheria."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requires 1 Tdap dose given at age >= 7 years for 7th grade advancement/admission through 12th grade. No Tdap doses received."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Measles. Requires 2 doses given at age >= 1 year."
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Mumps. Requires 2 doses given at age >= 1 year."
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Rubella. Requires 2 doses given at age >= 1 year."
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Hepatitis B. Requires 3 doses."
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Varicella. Requires 2 doses."
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only, not for K-12."
+      }
+    ]
+  },
+  {
+    "patient_id": "01ae1af3-937a-83eb-2998-8cb6efc21b79",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Patient received 1 dose at age 91. Patient is missing 4 doses. Conditional rule applied: 1 dose given at age 91, considered as Tdap dose at age >=7, reducing required doses to 3, but still not meeting the requirement."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria applied. Patient received 1 dose at age 91. Patient is missing 4 doses."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Pertussis directly, though Tdap dose received for Diphtheria/Tetanus may contain Pertussis component, it's not directly recorded."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 1,
+        "status": "met",
+        "notes": "Tdap dose given at age 91 meets the requirement for 7th-12th grade."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Not required for K-12 grade level"
+      }
+    ]
+  },
+  {
+    "patient_id": "70fc8e44-73ff-ea4c-743b-465e0fef039a",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, but 5 doses required; 1 dose was Td given at age 61, which is >=7, so it counts towards Tdap requirement, reducing required doses to 4, still not met"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same as Diphtheria, 1 dose received, Td given at age 61, counts towards Tdap requirement, reducing required doses to 4, still not met"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No Tdap dose given at age >=7 years"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only"
+      }
+    ]
+  },
+  {
+    "patient_id": "d97bcae3-192c-2eb8-2c05-8f613a2eef8e",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, but not at age >=4 or >=7 for reduction"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria; 1 dose received, dose date: 2026-05-04, patient's age: 61 years. Tdap dose at age >=7 could reduce required doses."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Pertussis directly, but same dose-reduction rules as Diphtheria"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Tdap dose required for 7th grade advancement, but no Tdap dose recorded at age >=7"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only"
+      }
+    ]
+  },
+  {
+    "patient_id": "adc25003-72ca-d569-ed7b-8ff60fe98f85",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, but 5 doses required; conditional rules not applicable due to insufficient doses"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, but 5 doses required; conditional rules not applicable due to insufficient doses"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for the TK/K-12 requirement"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No Tdap dose given at age >=7 years"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Requirement is for Pre-Kindergarten only"
+      }
+    ]
+  },
+  {
+    "patient_id": "f5d80bda-ceb3-cfea-9a6e-48b13af99b5f",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 3,
+        "status": "partial",
+        "notes": "3 doses received, 4 required. Conditional rule: 3 doses acceptable if at least one dose given at age >= 4 years. The patient received 3 doses, with the last dose given at age 4.92 years, which is >= 4 years. Thus, the doses_required should be reduced to 3. Status should be 'met'."
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 4,
+        "status": "partial",
+        "notes": "4 doses received, 5 required. Conditional rule: 4 doses acceptable if at least one dose given at age >= 4 years. The last dose was given at age 4.92 years, which is >= 4 years. Thus, the doses_required should be reduced to 4. Status should be 'met'."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 4,
+        "status": "partial",
+        "notes": "Same as Diphtheria, 4 doses received. The last dose was given at age 4.92 years, which is >= 4 years. Thus, the doses_required should be reduced to 4. Status should be 'met'."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 4,
+        "status": "partial",
+        "notes": "Same as Diphtheria, 4 doses received. The last dose was given at age 4.92 years, which is >= 4 years. Thus, the doses_required should be reduced to 4. Status should be 'met'."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Tdap dose required for 7th grade advancement. No Tdap dose recorded at age >= 7 years."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 2,
+        "status": "met",
+        "notes": "2 doses received, both given at age >= 1 year."
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 2,
+        "status": "met",
+        "notes": "2 doses received, both given at age >= 1 year."
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 2,
+        "status": "met",
+        "notes": "2 doses received, both given at age >= 1 year."
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, 3 required. No conditional reduction noted."
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 2,
+        "status": "met",
+        "notes": "2 doses received, meeting the requirement."
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 2,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only, not for K-12."
+      }
+    ]
+  },
+  {
+    "patient_id": "52eeed7f-8294-4dfc-13de-c4ed09a68819",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, 5 required; conditional rules not applicable due to insufficient doses"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, 5 required; conditional rules not applicable due to insufficient doses; same dose-reduction rules as Diphtheria apply"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for the primary series; separate Tdap requirement for 7th grade advancement exists"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Tdap dose required for 7th-12th grade; no Tdap dose received at age >=7"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Requirement is for Pre-Kindergarten only"
+      }
+    ]
+  },
+  {
+    "patient_id": "59cae7bf-c627-3fa2-f0bb-d0df58f4d727",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, but 5 doses required; 1 dose was Td given at age 31, which is considered valid for Diphtheria requirement; however, it doesn't meet the reduced dose count rules"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria; 1 Td dose received at age 31, which counts towards Tetanus requirement; still, 5 doses required"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Pertussis directly; 1 Td dose received which may contain Pertussis component but is not counted directly"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "1 Tdap dose required for 7th grade advancement; no Tdap dose received at age >= 7"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only"
+      }
+    ]
+  },
+  {
+    "patient_id": "1956ae9a-0a8c-a23b-6908-4592ac5f2aa5",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, but 5 doses required; conditional rules not applicable due to insufficient doses"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, but 5 doses required; conditional rules not applicable due to insufficient doses"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Pertussis directly, but 1 dose of Td received which may contain Pertussis component; however, it's not counted here due to being a different vaccine type"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "1 Tdap dose required for 7th grade advancement, but no Tdap doses received at age >=7 years"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only, not K-12"
+      }
+    ]
+  },
+  {
+    "patient_id": "b2d243a3-3157-61c1-bc0f-f0c55a0f18a3",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": true,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 4,
+        "status": "met",
+        "notes": "4 doses received, meets requirement"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 5,
+        "status": "met",
+        "notes": "5 doses received, meets requirement"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 5,
+        "status": "met",
+        "notes": "Same dose-reduction rules as Diphtheria; 5 doses received, meets requirement"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 5,
+        "status": "met",
+        "notes": "Same dose-reduction rules as Diphtheria; 5 doses received, meets requirement"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 1,
+        "status": "met",
+        "notes": "Tdap dose given at age 5 years (2022-11-07), meets requirement for 7th grade advancement"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 2,
+        "status": "met",
+        "notes": "2 doses received at ages 1.23 and 5 years, both doses given at age >=1 year"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 2,
+        "status": "met",
+        "notes": "2 doses received at ages 1.23 and 5 years, both doses given at age >=1 year"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 2,
+        "status": "met",
+        "notes": "2 doses received at ages 1.23 and 5 years, both doses given at age >=1 year"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 3,
+        "status": "met",
+        "notes": "3 doses received, meets requirement"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 2,
+        "status": "met",
+        "notes": "2 doses received, meets requirement"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 3,
+        "status": "not_applicable",
+        "notes": "Not required for K-12 grade level"
+      }
+    ]
+  },
+  {
+    "patient_id": "3296ee11-753f-a649-2a9a-9b91988df94f",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No polio vaccine doses received."
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Patient received 1 dose of Tdap vaccine. Requirement is 5 doses, or 4 if at least one dose given at age >= 4 years, or 3 if at least one Tdap dose given at age >= 7 years. The dose was given at age 11, satisfying the age >= 7 condition, so the required doses would be reduced to 3. Still, the patient has not met the requirement."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same as Diphtheria, as the vaccine is combined (Tdap). The patient received 1 dose. The dose was given at age 11, so the required doses would be reduced to 3. Still, the patient has not met the requirement."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same as Diphtheria, as the vaccine is combined (Tdap). The patient received 1 dose. The dose was given at age 11, so the required doses would be reduced to 3. Still, the patient has not met the requirement."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 1,
+        "status": "met",
+        "notes": "The patient received 1 Tdap dose at age 11, meeting the requirement for 7th-12th grade."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No measles vaccine doses received."
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No mumps vaccine doses received."
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No rubella vaccine doses received."
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No hepatitis B vaccine doses received."
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No varicella vaccine doses received."
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Requirement is for pre-kindergarten only."
+      }
+    ]
+  },
+  {
+    "patient_id": "0b31b1ac-c1c0-7727-566f-9a4c9422afa6",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, but requirement is 5 doses or 4 doses if at least one dose given at age >= 4 years, or 3 doses if at least one Tdap dose given at age >= 7 years. Patient is 36 years old at the dose date, which is >= 7 years."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same dose-reduction rules as Diphtheria. 1 dose received. Patient is 36 years old at the dose date, which is >= 7 years."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Pertussis directly, but same dose-reduction rules as Diphtheria apply. However, no Pertussis-specific doses are recorded."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "1 Tdap dose required for 7th grade advancement/admission through 12th grade. No Tdap doses are recorded."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only, NOT required K-12"
+      }
+    ]
+  },
+  {
+    "patient_id": "41ce9d5a-35bc-c03a-7da2-c3bdc14c1e68",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, 5 required; conditional rules not applicable due to insufficient doses"
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, 5 required; conditional rules not applicable due to insufficient doses"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for DTaP series; separate Tdap requirement for 7th grade not evaluated due to missing doses"
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Tdap dose required for 7th grade advancement; no Tdap doses given at age >=7 years"
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Requirement only applies to Pre-Kindergarten"
+      }
+    ]
+  },
+  {
+    "patient_id": "73fb14ab-bae0-137a-0756-bc56ccf1dc88",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Requirement applies to TK/K-12; patient received 1 dose, dose date: 2019-04-15, age: 51 years. Conditional rule applied: 1 dose at age >=7 (Tdap), reduces required doses to 3. Still, patient received fewer doses than required."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "Same as Diphtheria; patient received 1 dose, dose date: 2019-04-15, age: 51 years. Conditional rule applied: 1 dose at age >=7 (Tdap), reduces required doses to 3. Still, patient received fewer doses than required."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12. No doses received."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to 7th-12th grade; patient is in K-12, so this applies. No Tdap dose given at age >=7 years."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12. No doses received."
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12. No doses received."
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12. No doses received."
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12. No doses received."
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Requirement applies to TK/K-12; patient is in K-12. No doses received."
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Requirement is for Pre-Kindergarten only; patient is in K-12."
+      }
+    ]
+  },
+  {
+    "patient_id": "122f6293-5111-41e2-3594-0b8b16e720dc",
+    "state": "California",
+    "patient_grade_level": "K-12",
+    "model_used": "llama4",
+    "overall_compliant": false,
+    "per_disease": [
+      {
+        "disease": "Polio",
+        "doses_required": 4,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Diphtheria",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, but patient is in K-12 grade range. Conditional rules may apply, but not enough doses to meet any of them."
+      },
+      {
+        "disease": "Tetanus",
+        "doses_required": 5,
+        "doses_received": 1,
+        "status": "partial",
+        "notes": "1 dose received, same dose-reduction rules as Diphtheria. Dose date: 2023-08-20, patient's age: 42 years. Meets Tdap dose at age >=7 condition, reducing required doses to 3. Still, doses_received < doses_required."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 5,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received for Pertussis directly, though there is a Td dose that could imply a Tdap dose was given, it's not directly recorded."
+      },
+      {
+        "disease": "Pertussis",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "Separate requirement for 7th-12th grade. Patient is in K-12, so this applies. No Tdap dose recorded at age >=7."
+      },
+      {
+        "disease": "Measles",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Mumps",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Rubella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Hepatitis B",
+        "doses_required": 3,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Varicella",
+        "doses_required": 2,
+        "doses_received": 0,
+        "status": "missing",
+        "notes": "No doses received"
+      },
+      {
+        "disease": "Haemophilus influenzae type B",
+        "doses_required": 1,
+        "doses_received": 0,
+        "status": "not_applicable",
+        "notes": "Required for pre-kindergarten only, patient is in K-12"
+      }
+    ]
+  }
+]
