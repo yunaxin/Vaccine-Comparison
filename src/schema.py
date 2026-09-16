@@ -11,6 +11,21 @@ from pydantic import BaseModel
 
 
 # ---------------------------------------------------------------------------
+# Raw dose record -- the shape transform.py produces, checked by
+# validate_extraction.py before records move on to build_ledger.py
+# ---------------------------------------------------------------------------
+class RawDoseRecord(BaseModel):
+    user_id: str
+    patient_name: str
+    vaccine_name: str
+    dose_date: date
+    manufacturer: str
+    lot_number: str
+    provider: str
+    clinic: str
+
+
+# ---------------------------------------------------------------------------
 # Input: a patient's ledger (reused shape from the transformation pipeline)
 # ---------------------------------------------------------------------------
 class LedgerDose(BaseModel):
