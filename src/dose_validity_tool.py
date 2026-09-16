@@ -2,15 +2,11 @@
 dose_validity_tool.py
 
 A deterministic tool for checking whether a specific vaccine dose is valid
-against a state's minimum age and minimum interval rules. Meant to be
-called by an AI agent (via function calling / tool use) rather than
-having the model calculate date arithmetic itself.
-
-The agent still does the real reasoning: deciding which doses to check,
-interpreting results, applying reduction exceptions from notes text, and
-writing the final explanation. This tool only answers one narrow,
-mechanical question per call: "is this specific dose valid?" or "when
-does this dose become eligible?"
+against a state's minimum age and minimum interval rules, and for
+evaluating a patient's overall compliance for one disease, including
+dose-reduction exceptions. This is the single shared implementation used
+by both the ADK agent's tool function and any other interface (e.g. a
+Streamlit app) built on top of it.
 """
 
 from datetime import date, timedelta
@@ -94,13 +90,8 @@ def check_next_dose_eligibility(
     For a dose the patient has NOT yet received, determines the earliest
     date they become eligible for it, and whether that date has already
     passed (overdue / "missing") or is still upcoming ("eligible").
-
-    Correctly accounts for compound additional constraints (e.g.
-    Hepatitis B dose 3's "8 weeks after dose 2 AND 16 weeks after dose 1"
-    rule) by taking the LATEST of all applicable constraint dates -- a
-    fix for a bug where this constraint was previously only applied when
-    checking an already-given dose, not when calculating eligibility for
-    a dose not yet given.
+    Accounts for compound additional constraints by taking the LATEST of
+    all applicable constraint dates.
     """
     if today is None:
         today = date.today().isoformat()
@@ -136,10 +127,9 @@ def check_next_dose_eligibility(
 def evaluate_dose_series(dose_schedule: list, patient_doses: list, date_of_birth: str, today: str = None) -> list:
     """
     Evaluates a full dose series against a patient's actual recorded
-    doses, following the reference UI pattern: each dose checked in
-    order, later doses depending on earlier ones being present.
-
-    patient_doses: list of ISO date strings, in chronological order.
+    doses: each dose checked in order, later doses depending on earlier
+    ones being present. patient_doses: list of ISO date strings, in
+    chronological order.
     """
     results = []
     previous_dose_date = None
@@ -196,3 +186,65 @@ def evaluate_dose_series(dose_schedule: list, patient_doses: list, date_of_birth
                 })
 
     return results
+
+
+def reduction_applies(patient_doses: list, date_of_birth: str, reduction: dict) -> bool:
+    """
+    Checks whether a dose-reduction exception applies (e.g. DTaP dose 5
+    not needed if dose 4 was given at age 4+ and >=6 months after dose 3).
+    """
+    trigger_idx = reduction["trigger_dose_index"]
+    prev_idx = reduction["prev_dose_index"]
+    if len(patient_doses) <= trigger_idx:
+        return False
+    trigger_date = patient_doses[trigger_idx]
+    prev_date = patient_doses[prev_idx]
+    age_at_trigger = days_between(date_of_birth, trigger_date)
+    interval_from_prev = days_between(prev_date, trigger_date)
+    return age_at_trigger >= reduction["min_age_days"] and interval_from_prev >= reduction["min_interval_days"]
+
+
+def evaluate_disease_compliance(requirement: dict, patient_doses: list, date_of_birth: str, today: str = None) -> dict:
+    """
+    The single, shared entry point for checking one disease's compliance.
+    Used identically by the ADK agent's tool function and by any other
+    interface built on top of this module.
+    """
+    dose_schedule = requirement.get("dose_schedule", [])
+
+    if not dose_schedule:
+        return {
+            "disease": requirement["disease"],
+            "not_applicable": True,
+            "reason": requirement.get("notes", "Not required for this grade range."),
+        }
+
+    patient_doses = sorted(patient_doses)
+    results = evaluate_dose_series(dose_schedule, patient_doses, date_of_birth, today=today)
+
+    effective_required = requirement["doses_required"]
+    reduction = requirement.get("reduction")
+    reduction_note = None
+    if reduction and reduction_applies(patient_doses, date_of_birth, reduction):
+        effective_required = reduction["reduces_to"]
+        results = [r for r in results if r["dose"] <= effective_required or r["status"] == "yes"]
+        reduction_note = f"Reduction exception applied: only {effective_required} doses required based on dose {reduction['trigger_dose_index'] + 1}'s age and timing."
+
+    valid_count = sum(1 for r in results if r["status"] == "yes")
+    if valid_count >= effective_required:
+        overall = "met"
+    elif valid_count > 0:
+        overall = "partial"
+    else:
+        overall = "missing"
+
+    return {
+        "disease": requirement["disease"],
+        "doses_required": requirement["doses_required"],
+        "effective_doses_required": effective_required,
+        "grade_or_age_range": requirement["grade_or_age_range"],
+        "state_notes": requirement.get("notes"),
+        "reduction_applied": reduction_note,
+        "overall_status": overall,
+        "per_dose_results": results,
+    }

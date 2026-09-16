@@ -9,12 +9,49 @@
       "grade_or_age_range": "Kindergarten through 12th grade",
       "notes": "5 doses of DTaP required. Dose 5 not needed if dose 4 was given at age 4+ AND at least 6 months after dose 3.",
       "dose_schedule": [
-        {"dose": 1, "minimum_age": "6 weeks", "minimum_age_days": 42, "minimum_interval_from_previous": null, "minimum_interval_days": null},
-        {"dose": 2, "minimum_age": "10 weeks", "minimum_age_days": 70, "minimum_interval_from_previous": "4 weeks after dose 1", "minimum_interval_days": 28},
-        {"dose": 3, "minimum_age": "14 weeks", "minimum_age_days": 98, "minimum_interval_from_previous": "4 weeks after dose 2", "minimum_interval_days": 28},
-        {"dose": 4, "minimum_age": "12 months", "minimum_age_days": 365, "minimum_interval_from_previous": "6 months after dose 3 (4 months minimum acceptable on record review)", "minimum_interval_days": 122},
-        {"dose": 5, "minimum_age": "4 years", "minimum_age_days": 1460, "minimum_interval_from_previous": "6 months after dose 4", "minimum_interval_days": 183}
-      ]
+        {
+          "dose": 1,
+          "minimum_age": "6 weeks",
+          "minimum_age_days": 42,
+          "minimum_interval_from_previous": null,
+          "minimum_interval_days": null
+        },
+        {
+          "dose": 2,
+          "minimum_age": "10 weeks",
+          "minimum_age_days": 70,
+          "minimum_interval_from_previous": "4 weeks after dose 1",
+          "minimum_interval_days": 28
+        },
+        {
+          "dose": 3,
+          "minimum_age": "14 weeks",
+          "minimum_age_days": 98,
+          "minimum_interval_from_previous": "4 weeks after dose 2",
+          "minimum_interval_days": 28
+        },
+        {
+          "dose": 4,
+          "minimum_age": "12 months",
+          "minimum_age_days": 365,
+          "minimum_interval_from_previous": "6 months after dose 3 (4 months minimum acceptable on record review)",
+          "minimum_interval_days": 122
+        },
+        {
+          "dose": 5,
+          "minimum_age": "4 years",
+          "minimum_age_days": 1460,
+          "minimum_interval_from_previous": "6 months after dose 4",
+          "minimum_interval_days": 183
+        }
+      ],
+      "reduction": {
+        "trigger_dose_index": 3,
+        "prev_dose_index": 2,
+        "min_age_days": 1460,
+        "min_interval_days": 183,
+        "reduces_to": 4
+      }
     },
     {
       "disease": "Tetanus",
@@ -22,12 +59,49 @@
       "grade_or_age_range": "Kindergarten through 12th grade",
       "notes": "Same dose-reduction rules as Diphtheria (combined DTaP vaccine). Dose 5 not needed if dose 4 was given at age 4+ AND at least 6 months after dose 3.",
       "dose_schedule": [
-        {"dose": 1, "minimum_age": "6 weeks", "minimum_age_days": 42, "minimum_interval_from_previous": null, "minimum_interval_days": null},
-        {"dose": 2, "minimum_age": "10 weeks", "minimum_age_days": 70, "minimum_interval_from_previous": "4 weeks after dose 1", "minimum_interval_days": 28},
-        {"dose": 3, "minimum_age": "14 weeks", "minimum_age_days": 98, "minimum_interval_from_previous": "4 weeks after dose 2", "minimum_interval_days": 28},
-        {"dose": 4, "minimum_age": "12 months", "minimum_age_days": 365, "minimum_interval_from_previous": "6 months after dose 3", "minimum_interval_days": 183},
-        {"dose": 5, "minimum_age": "4 years", "minimum_age_days": 1460, "minimum_interval_from_previous": "6 months after dose 4", "minimum_interval_days": 183}
-      ]
+        {
+          "dose": 1,
+          "minimum_age": "6 weeks",
+          "minimum_age_days": 42,
+          "minimum_interval_from_previous": null,
+          "minimum_interval_days": null
+        },
+        {
+          "dose": 2,
+          "minimum_age": "10 weeks",
+          "minimum_age_days": 70,
+          "minimum_interval_from_previous": "4 weeks after dose 1",
+          "minimum_interval_days": 28
+        },
+        {
+          "dose": 3,
+          "minimum_age": "14 weeks",
+          "minimum_age_days": 98,
+          "minimum_interval_from_previous": "4 weeks after dose 2",
+          "minimum_interval_days": 28
+        },
+        {
+          "dose": 4,
+          "minimum_age": "12 months",
+          "minimum_age_days": 365,
+          "minimum_interval_from_previous": "6 months after dose 3",
+          "minimum_interval_days": 183
+        },
+        {
+          "dose": 5,
+          "minimum_age": "4 years",
+          "minimum_age_days": 1460,
+          "minimum_interval_from_previous": "6 months after dose 4",
+          "minimum_interval_days": 183
+        }
+      ],
+      "reduction": {
+        "trigger_dose_index": 3,
+        "prev_dose_index": 2,
+        "min_age_days": 1460,
+        "min_interval_days": 183,
+        "reduces_to": 4
+      }
     },
     {
       "disease": "Pertussis",
@@ -35,12 +109,49 @@
       "grade_or_age_range": "Kindergarten through 6th grade",
       "notes": "Same dose-reduction rules as Diphtheria (combined DTaP vaccine).",
       "dose_schedule": [
-        {"dose": 1, "minimum_age": "6 weeks", "minimum_age_days": 42, "minimum_interval_from_previous": null, "minimum_interval_days": null},
-        {"dose": 2, "minimum_age": "10 weeks", "minimum_age_days": 70, "minimum_interval_from_previous": "4 weeks after dose 1", "minimum_interval_days": 28},
-        {"dose": 3, "minimum_age": "14 weeks", "minimum_age_days": 98, "minimum_interval_from_previous": "4 weeks after dose 2", "minimum_interval_days": 28},
-        {"dose": 4, "minimum_age": "12 months", "minimum_age_days": 365, "minimum_interval_from_previous": "6 months after dose 3", "minimum_interval_days": 183},
-        {"dose": 5, "minimum_age": "4 years", "minimum_age_days": 1460, "minimum_interval_from_previous": "6 months after dose 4", "minimum_interval_days": 183}
-      ]
+        {
+          "dose": 1,
+          "minimum_age": "6 weeks",
+          "minimum_age_days": 42,
+          "minimum_interval_from_previous": null,
+          "minimum_interval_days": null
+        },
+        {
+          "dose": 2,
+          "minimum_age": "10 weeks",
+          "minimum_age_days": 70,
+          "minimum_interval_from_previous": "4 weeks after dose 1",
+          "minimum_interval_days": 28
+        },
+        {
+          "dose": 3,
+          "minimum_age": "14 weeks",
+          "minimum_age_days": 98,
+          "minimum_interval_from_previous": "4 weeks after dose 2",
+          "minimum_interval_days": 28
+        },
+        {
+          "dose": 4,
+          "minimum_age": "12 months",
+          "minimum_age_days": 365,
+          "minimum_interval_from_previous": "6 months after dose 3",
+          "minimum_interval_days": 183
+        },
+        {
+          "dose": 5,
+          "minimum_age": "4 years",
+          "minimum_age_days": 1460,
+          "minimum_interval_from_previous": "6 months after dose 4",
+          "minimum_interval_days": 183
+        }
+      ],
+      "reduction": {
+        "trigger_dose_index": 3,
+        "prev_dose_index": 2,
+        "min_age_days": 1460,
+        "min_interval_days": 183,
+        "reduces_to": 4
+      }
     },
     {
       "disease": "Pertussis",
@@ -48,7 +159,13 @@
       "grade_or_age_range": "7th through 12th grade",
       "notes": "SEPARATE requirement: 1 Tdap booster dose required at age 10+ for all students grades 7-12. The 4-day grace period does NOT apply to this minimum age. Students who received Td instead of Tdap must get a Tdap dose or have an exemption to pertussis.",
       "dose_schedule": [
-        {"dose": 1, "minimum_age": "10 years", "minimum_age_days": 3650, "minimum_interval_from_previous": "none required", "minimum_interval_days": 0}
+        {
+          "dose": 1,
+          "minimum_age": "10 years",
+          "minimum_age_days": 3650,
+          "minimum_interval_from_previous": "none required",
+          "minimum_interval_days": 0
+        }
       ]
     },
     {
@@ -57,9 +174,32 @@
       "grade_or_age_range": "Kindergarten through 12th grade",
       "notes": "3 doses required. If dose 3 given before 24 weeks of age, series becomes 4 doses.",
       "dose_schedule": [
-        {"dose": 1, "minimum_age": "birth", "minimum_age_days": 0, "minimum_interval_from_previous": null, "minimum_interval_days": null},
-        {"dose": 2, "minimum_age": "4 weeks", "minimum_age_days": 28, "minimum_interval_from_previous": "4 weeks after dose 1", "minimum_interval_days": 28},
-        {"dose": 3, "minimum_age": "24 weeks", "minimum_age_days": 168, "minimum_interval_from_previous": "8 weeks after dose 2 AND 16 weeks after dose 1", "minimum_interval_days": 56, "additional_constraint": {"description": "also >=16 weeks after dose 1", "days_after_dose": 1, "days": 112}}
+        {
+          "dose": 1,
+          "minimum_age": "birth",
+          "minimum_age_days": 0,
+          "minimum_interval_from_previous": null,
+          "minimum_interval_days": null
+        },
+        {
+          "dose": 2,
+          "minimum_age": "4 weeks",
+          "minimum_age_days": 28,
+          "minimum_interval_from_previous": "4 weeks after dose 1",
+          "minimum_interval_days": 28
+        },
+        {
+          "dose": 3,
+          "minimum_age": "24 weeks",
+          "minimum_age_days": 168,
+          "minimum_interval_from_previous": "8 weeks after dose 2 AND 16 weeks after dose 1",
+          "minimum_interval_days": 56,
+          "additional_constraint": {
+            "description": "also >=16 weeks after dose 1",
+            "days_after_dose": 1,
+            "days": 112
+          }
+        }
       ]
     },
     {
@@ -68,8 +208,20 @@
       "grade_or_age_range": "Kindergarten through 12th grade",
       "notes": "2 doses required (MMR combined vaccine). Dose given 5+ days before 1st birthday is not valid.",
       "dose_schedule": [
-        {"dose": 1, "minimum_age": "12 months", "minimum_age_days": 365, "minimum_interval_from_previous": null, "minimum_interval_days": null},
-        {"dose": 2, "minimum_age": "13 months", "minimum_age_days": 396, "minimum_interval_from_previous": "4 weeks (28 days) after dose 1", "minimum_interval_days": 28}
+        {
+          "dose": 1,
+          "minimum_age": "12 months",
+          "minimum_age_days": 365,
+          "minimum_interval_from_previous": null,
+          "minimum_interval_days": null
+        },
+        {
+          "dose": 2,
+          "minimum_age": "13 months",
+          "minimum_age_days": 396,
+          "minimum_interval_from_previous": "4 weeks (28 days) after dose 1",
+          "minimum_interval_days": 28
+        }
       ]
     },
     {
@@ -78,8 +230,20 @@
       "grade_or_age_range": "Kindergarten through 12th grade",
       "notes": "2 doses required (MMR combined vaccine). Same rules as Measles.",
       "dose_schedule": [
-        {"dose": 1, "minimum_age": "12 months", "minimum_age_days": 365, "minimum_interval_from_previous": null, "minimum_interval_days": null},
-        {"dose": 2, "minimum_age": "13 months", "minimum_age_days": 396, "minimum_interval_from_previous": "4 weeks (28 days) after dose 1", "minimum_interval_days": 28}
+        {
+          "dose": 1,
+          "minimum_age": "12 months",
+          "minimum_age_days": 365,
+          "minimum_interval_from_previous": null,
+          "minimum_interval_days": null
+        },
+        {
+          "dose": 2,
+          "minimum_age": "13 months",
+          "minimum_age_days": 396,
+          "minimum_interval_from_previous": "4 weeks (28 days) after dose 1",
+          "minimum_interval_days": 28
+        }
       ]
     },
     {
@@ -88,8 +252,20 @@
       "grade_or_age_range": "Kindergarten through 12th grade",
       "notes": "2 doses required (MMR combined vaccine). Same rules as Measles.",
       "dose_schedule": [
-        {"dose": 1, "minimum_age": "12 months", "minimum_age_days": 365, "minimum_interval_from_previous": null, "minimum_interval_days": null},
-        {"dose": 2, "minimum_age": "13 months", "minimum_age_days": 396, "minimum_interval_from_previous": "4 weeks (28 days) after dose 1", "minimum_interval_days": 28}
+        {
+          "dose": 1,
+          "minimum_age": "12 months",
+          "minimum_age_days": 365,
+          "minimum_interval_from_previous": null,
+          "minimum_interval_days": null
+        },
+        {
+          "dose": 2,
+          "minimum_age": "13 months",
+          "minimum_age_days": 396,
+          "minimum_interval_from_previous": "4 weeks (28 days) after dose 1",
+          "minimum_interval_days": 28
+        }
       ]
     },
     {
@@ -98,11 +274,42 @@
       "grade_or_age_range": "Kindergarten through 12th grade",
       "notes": "4 doses required. Dose 4 not required if dose 3 was given on/after the 4th birthday AND at least 6 months after the previous dose (for doses given on/after 08/07/2009).",
       "dose_schedule": [
-        {"dose": 1, "minimum_age": "6 weeks", "minimum_age_days": 42, "minimum_interval_from_previous": null, "minimum_interval_days": null},
-        {"dose": 2, "minimum_age": "10 weeks", "minimum_age_days": 70, "minimum_interval_from_previous": "4 weeks after dose 1", "minimum_interval_days": 28},
-        {"dose": 3, "minimum_age": "14 weeks", "minimum_age_days": 98, "minimum_interval_from_previous": "4 weeks after dose 2", "minimum_interval_days": 28},
-        {"dose": 4, "minimum_age": "4 years", "minimum_age_days": 1460, "minimum_interval_from_previous": "6 months after dose 3", "minimum_interval_days": 183}
-      ]
+        {
+          "dose": 1,
+          "minimum_age": "6 weeks",
+          "minimum_age_days": 42,
+          "minimum_interval_from_previous": null,
+          "minimum_interval_days": null
+        },
+        {
+          "dose": 2,
+          "minimum_age": "10 weeks",
+          "minimum_age_days": 70,
+          "minimum_interval_from_previous": "4 weeks after dose 1",
+          "minimum_interval_days": 28
+        },
+        {
+          "dose": 3,
+          "minimum_age": "14 weeks",
+          "minimum_age_days": 98,
+          "minimum_interval_from_previous": "4 weeks after dose 2",
+          "minimum_interval_days": 28
+        },
+        {
+          "dose": 4,
+          "minimum_age": "4 years",
+          "minimum_age_days": 1460,
+          "minimum_interval_from_previous": "6 months after dose 3",
+          "minimum_interval_days": 183
+        }
+      ],
+      "reduction": {
+        "trigger_dose_index": 2,
+        "prev_dose_index": 1,
+        "min_age_days": 1460,
+        "min_interval_days": 183,
+        "reduces_to": 3
+      }
     },
     {
       "disease": "Varicella",
@@ -110,8 +317,25 @@
       "grade_or_age_range": "Kindergarten through 12th grade",
       "notes": "2 doses required. Provider-verified history of chickenpox disease also acceptable in place of vaccination. Interval from dose 1 depends on age at dose 2: 3 months if age 12mo-12yr, 4 weeks if age 13+.",
       "dose_schedule": [
-        {"dose": 1, "minimum_age": "12 months", "minimum_age_days": 365, "minimum_interval_from_previous": null, "minimum_interval_days": null},
-        {"dose": 2, "minimum_age": "13 months", "minimum_age_days": 396, "minimum_interval_from_previous": "3 months after dose 1 (ages 12mo-12yr); 4 weeks after dose 1 (age 13+)", "minimum_interval_days": 90, "age_conditional_interval": {"if_age_at_dose_under_days": 4380, "interval_days": 90, "else_interval_days": 28}}
+        {
+          "dose": 1,
+          "minimum_age": "12 months",
+          "minimum_age_days": 365,
+          "minimum_interval_from_previous": null,
+          "minimum_interval_days": null
+        },
+        {
+          "dose": 2,
+          "minimum_age": "13 months",
+          "minimum_age_days": 396,
+          "minimum_interval_from_previous": "3 months after dose 1 (ages 12mo-12yr); 4 weeks after dose 1 (age 13+)",
+          "minimum_interval_days": 90,
+          "age_conditional_interval": {
+            "if_age_at_dose_under_days": 4380,
+            "interval_days": 90,
+            "else_interval_days": 28
+          }
+        }
       ]
     },
     {
