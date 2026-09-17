@@ -15,7 +15,7 @@ pip install -r requirements.txt   # or see individual install commands below
 ```
 
 You'll also need:
-- Google Cloud credentials for the `vaccine-genie` project (`gcloud auth application-default login`)
+- Google Cloud credentials for the project (`gcloud auth application-default login`)
 - For the ADK agent specifically: `pip install google-adk`
 - For the direct-comparison Claude model: `pip install "anthropic[vertex]"`
 - For the Streamlit app: `pip install streamlit`
