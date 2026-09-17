@@ -18,12 +18,21 @@ e.g.: "5 doses meet requirement, OR 4 if at least one dose given at age
 fixed dose-count comparison can't apply a rule like this correctly on
 its own, which is why this approach hands the reasoning to a model.
 
-### Models tested (California)
+### Models attempted (California)
+
+Only Gemini and Llama 4 were actually run and tested. Claude and
+Mistral were set up but never successfully ran, due to access issues
+outside of code -- listed here for completeness, not because they were
+tested.
+
+**Actually tested:**
 - **Gemini** (`model_gemini.py`) -- working, tested against the
   benchmark dataset, 50-patient run completed
 - **Llama 4** (`model_llama4.py`) -- working, 50-patient run completed.
   Uses Vertex AI's Llama 4 API Service (Maverick variant, `us-east5`
   region -- both had to be corrected from initial guesses)
+
+**Set up but never run:**
 - **Claude** (`model_claude.py`) -- blocked; requires a formal business
   access request submitted to and approved by Anthropic, not a simple
   enable

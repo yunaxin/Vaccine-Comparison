@@ -34,7 +34,8 @@ You'll also need:
 - `data/state_requirements/Washington.json` -- verified against two real DOH sources, includes structured per-dose age/interval data for the agentic approach
 
 ### Approach 1: direct model comparison (California)
-- `src/models/model_gemini.py`, `model_llama4.py`, `model_claude.py`, `model_mistral.py` -- one file per model, same shared prompt/instructions, same input/output shape, so results are directly comparable
+- `src/models/model_gemini.py`, `model_llama4.py` -- actually run and tested, same shared prompt/instructions and input/output shape so results are directly comparable
+- `src/models/model_claude.py`, `model_mistral.py` -- written and set up, but never successfully run due to access issues outside of code (see `ai_agent_spec.md` for detail)
 - `src/compare.py` -- the original no-AI dose-count-only baseline, for comparison against the models
 
 To run one:
