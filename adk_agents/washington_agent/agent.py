@@ -5,8 +5,10 @@ An ADK (Agent Development Kit) agent that checks a patient's ledger
 against Washington state's immunization requirements. Uses two function
 tools: one to look up a patient's real dose history by name from the
 benchmark dataset, and one to check dose validity against Washington's
-rules -- keeping the actual date arithmetic reliable and separate from
-the model's own reasoning.
+rules. Ends its response with a structured JSON summary, matching the
+same output shape as the direct-comparison models (model_gemini.py
+etc.), so results can be parsed and scored programmatically the same
+way.
 """
 
 import json
@@ -45,6 +47,7 @@ def lookup_patient_ledger(patient_name: str) -> str:
         ]
 
     return json.dumps({
+        "patient_id": patient["user_id"],
         "patient_name": patient["patient_name"],
         "date_of_birth": patient["date_of_birth"],
         "doses_by_disease": doses_by_disease,
@@ -102,16 +105,28 @@ root_agent = Agent(
     instruction="""You check whether a student's vaccination record satisfies Washington state's school immunization requirements.
 
 If the user gives you a patient's name instead of dose dates directly:
-1. Call lookup_patient_ledger with that name to get their date of birth and dose history.
+1. Call lookup_patient_ledger with that name to get their patient_id, date of birth, and dose history.
 2. If no patient is found, tell the user clearly and do not proceed.
 
 For each disease covered by Washington's school requirements (Diphtheria, Tetanus, Pertussis, Hepatitis B, Measles, Mumps, Rubella, Polio, Varicella):
 1. Call check_disease_compliance with the disease name, the patient's dose dates for that disease (in chronological order), and their date of birth. If the patient has no doses on record for a disease, still call the tool with an empty list so eligibility can be calculated.
 2. Read the tool's per-dose results carefully. The tool has already done the date math -- do not recalculate ages or intervals yourself, trust the tool's output.
-3. If the tool returns not_applicable, report that disease as not applicable and move on.
+3. If the tool returns not_applicable, that disease's status is "not_applicable" and you move on.
 4. Read the state_notes field for any dose-reduction exceptions (e.g. "dose 5 not needed if dose 4 given at age 4+ and 6 months after dose 3"). Apply these exceptions yourself by reasoning about the per_dose_results -- the tool does not apply these exceptions automatically, only the base schedule check.
 5. Determine an overall status per disease: "met" if all required doses are valid (or a reduction exception applies), "partial" if some doses are valid but not enough, "missing" if none are valid, "needs_review" if the tool's results are ambiguous.
-6. Summarize your findings clearly, disease by disease, citing the specific per-dose reasoning the tool provided.
+
+First, explain your findings clearly in plain language, disease by disease, citing the specific per-dose reasoning the tool provided.
+
+Then, as the VERY LAST part of your response, output a JSON object on its own, with no other text after it, in exactly this shape:
+{
+  "patient_id": "<the patient_id from lookup_patient_ledger, or null if dose dates were given directly>",
+  "state": "Washington",
+  "model_used": "washington_agent",
+  "overall_compliant": true or false,
+  "per_disease": [
+    {"disease": "...", "doses_required": N, "doses_received": N, "status": "met|partial|missing|not_applicable|needs_review", "notes": "..."}
+  ]
+}
 
 Always call the tools before making any compliance judgment. Never estimate or guess a patient's dose history or dose validity without calling the appropriate tool first.""",
     tools=[lookup_patient_ledger, check_disease_compliance],
